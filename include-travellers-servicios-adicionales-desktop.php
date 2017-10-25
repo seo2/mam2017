@@ -272,19 +272,18 @@
                 <div class="col-md-4">
 					<div class="box_agencia">
                         <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="70" height="45">
                         </div>
                         <div class="desc_servicio text-center">
-                            <p> Ofrece cultura, esparcimiento y diversión a través de servicios turísticos seguros, 
-                            confiables y de alta calidad que, de forma flexible,
-                            muestran los atractivos turísticos más relevantes de Santiago y de sus alrededores.</p>
-                            <p>Tel.: +56228201000 </p>
-                            <p> tipo de moneda: Dólar, Reales Brasileños, Pesos Argentinos, Euros y otras.</p>
-                            <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
+                            <p> En Cocha encuentra la mejor alternativa para tu viaje. Cruceros, pasajes, paquetes turísticos y otros servicios que te ayudaran a disfrutar al máximo tu descanso.</p>
+                            <p>Tel.: +562 464 18 00 </p>
+                            <p>Mail : msolari@cocha.com</p>
+                            
+                            <a href="http://www.cocha.cl/" target="_blank" class="url_agencia">www.cocha.cl</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+            <!--     <div class="col-md-4">
                    <div class="box_agencia">
                       <div class="head_agencia">
                        <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
@@ -296,8 +295,8 @@
                         <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
                       </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </div> -->
+           <!--      <div class="col-md-4">
                     <div class="box_agencia">
                           <div class="head_agencia">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
@@ -311,7 +310,7 @@
                           <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
                           </div>
                     </div>
-                </div>
+                </div> -->
 				<?php } ?>  	                
                 
                 
@@ -461,14 +460,15 @@
                  <div class="col-md-4">
                  <div class="box_agencia">
                        <div class="head_agencia">
-                         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
+                         <img src="<?php bloginfo('template_url'); ?>/assets/img/banco-de-chile.jpg">
                        </div>
                        <div class="desc_servicio text-center">
-                           <p> Lunes a Viernes <br>
-                             de 09:00 a 14:00 hrs  <br>
+                           <p> Sucursal BBVA abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br>
+                            Haz todos tus trámites y luego ¡tómate ese delicioso café que estabas esperando!
+                             <br>
                                   </p>
-                                  <p class="tel"> Tel.: +56232054249 </p>
-                                   <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
+                                  <p class="tel"> Banco BBVA</p>
+                                   <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
                        </div>
                      </div>
                  </div>		

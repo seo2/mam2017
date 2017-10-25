@@ -76,8 +76,8 @@ if(ICL_LANGUAGE_CODE=='en'){
               <li><a href="<?php bloginfo('url'); ?>/terminos-y-condiciones"><?php echo $menu4; ?></a></li>
               <li><a href="http://sistemas.parquearauco.cl/Relatorios/Inicio.aspx" target="_blank"><?php echo $menu5; ?></a></li>
               <li><a href="http://sistemas.parquearauco.cl/Portal" target="_blank"><?php echo $menu6; ?></a></li>
-              <li><a href="<?php bloginfo('url'); ?>/legales-concursos"><?php echo $menu7; ?></a></li>
-            </ul>
+             <!--  <li><a href="<?php bloginfo('url'); ?>/legales-concursos"><?php echo $menu7; ?></a></li>
+            </ul> -->
           </div>
           <div class="col-xs-12 col-sm-6">
               <ul class="bullets">
@@ -86,10 +86,10 @@ if(ICL_LANGUAGE_CODE=='en'){
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </div>
                   <div class="bullet-content">
-                    <h2>Parque Arauco Kennedy</h2>
-                    <p>Av. Pdte. Kennedy Nº5413, <br>
-                    Las Condes. Santiago Chile. <br>
-                    <a href="https://www.google.es/maps/place/Parque+Arauco/@-33.4019089,-70.5798102,18z/data=!4m13!1m7!3m6!1s0x9662cf4657be4221:0xedf29683ef50290a!2sAv+Presidente+Kennedy,+Regi%C3%B3n+Metropolitana,+Chile!3b1!8m2!3d-33.3977769!4d-70.5709762!3m4!1s0x9662cf26243dcc31:0xc9aacb64a9fec91!8m2!3d-33.4018773!4d-70.5792048" class="link_rojo" target="_blank"><?php echo $tit1; ?></a></p>
+                    <h2>Mall Arauco Maip&uacute;</h2>
+                    <p>Avenida Am&eacute;rico Vespucio 399, <br>
+                    Maip&uacute;. Santiago Chile. <br>
+                    <a href="https://www.google.cl/maps/place/Mall+Arauco+Maip%C3%BA/@-33.4820447,-70.7510304,15z/data=!4m5!3m4!1s0x0:0xdb6d81fc6e90e4e5!8m2!3d-33.4820447!4d-70.7510304" class="link_rojo" target="_blank"><?php echo $tit1; ?></a></p>
                   </div>
                 </li>  
                 <li class="bullet clearfix">
@@ -107,8 +107,8 @@ if(ICL_LANGUAGE_CODE=='en'){
                     <p>DOMINGO E FERIADOS DAS 11:00H ATÉ AS 21:00H.</p>
 					<?php }else{  ?>
                     <h2>horarios</h2>
-                    <p>Lunes a sábado de 10:00 a 21:00 hrs.</p>
-                    <p>domingo y festivos de 11:00 a 21:00 hrs. </p>
+                    <p>Lunes a domingos y</p>
+                    <p> festivos, de 10:30 a 21:30 hrs.</p>
 					<?php } ?> 	                  
                   </div>
                 </li>

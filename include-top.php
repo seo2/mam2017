@@ -180,7 +180,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                       </li>
 
                                       <li>
-                                            <a href="https://www.google.es/maps/place/Parque+Arauco/@-33.4019089,-70.5798102,18z/data=!4m13!1m7!3m6!1s0x9662cf4657be4221:0xedf29683ef50290a!2sAv+Presidente+Kennedy,+Regi%C3%B3n+Metropolitana,+Chile!3b1!8m2!3d-33.3977769!4d-70.5709762!3m4!1s0x9662cf26243dcc31:0xc9aacb64a9fec91!8m2!3d-33.4018773!4d-70.5792048" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tit2; ?> </a>
+                                            <a href="https://www.google.cl/maps/place/Mall+Arauco+Maip%C3%BA/@-33.4820447,-70.7510304,15z/data=!4m5!3m4!1s0x0:0xdb6d81fc6e90e4e5!8m2!3d-33.4820447!4d-70.7510304" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tit2; ?> </a>
                                       </li>
                                     </ul>
                               </div>

@@ -272,7 +272,7 @@
                     </div>
                 </div>
 				<?php }else{  ?>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
 					<div class="box_agencia">
                         <div class="head_agencia">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
@@ -286,8 +286,8 @@
                             <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </div> -->
+                <!-- <div class="col-md-4">
                    <div class="box_agencia">
                       <div class="head_agencia">
                        <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
@@ -299,18 +299,16 @@
                         <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
                       </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-4">
                     <div class="box_agencia">
                           <div class="head_agencia">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
                           </div>
                           <div class="desc_servicio text-center">
-                          <p> Cuando de viajes se trata, Cocha es el experto. Con más de 60 años de experiencia,
-                          esta agencia está dedicada a la venta de viajes que consideran pasajes,
-                          estadías y tours por todo el mundo, con asesoría profesional para que 
-                          nada falle en un viaje inolvidable.</p>
-                          <p>¿Vacaciones? ¡Ahora!</p> 
+                          <p> En Cocha encuentra la mejor alternativa para tu viaje. Cruceros, pasajes, paquetes turísticos y otros servicios que te ayudaran a disfrutar al máximo tu descanso.</p>
+                          <p>Tel.: +562 464 18 00</p> 
+                          <p>Mail : msolari@cocha.com</p>
                           <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
                           </div>
                     </div>
