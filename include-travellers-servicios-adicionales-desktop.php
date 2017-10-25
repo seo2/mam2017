@@ -460,7 +460,7 @@
                  <div class="col-md-4">
                  <div class="box_agencia">
                        <div class="head_agencia">
-                         <img src="<?php bloginfo('template_url'); ?>/assets/img/banco-de-chile.jpg">
+                         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.jpg">
                        </div>
                        <div class="desc_servicio text-center">
                            <p> Sucursal BBVA abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br>
