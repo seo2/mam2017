@@ -444,15 +444,14 @@
                 <div class="col-md-4">
                        <div class="box_agencia">
                              <div class="head_agencia">
-                               <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
+                               <img src="<?php bloginfo('template_url'); ?>/assets/img/banco-de-chile.jpg" height="40">
                              </div>
                              <div class="desc_servicio text-center">
-                             <p> Lunes a Viernes <br>
-                             de 09:00 a 14:00 hrs  <br>
+                             <p> Sucursal Banco de Chile abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br> Haz todos tus trámites y luego vitrinéatelo todo!
                                   </p>
-                                  <p class="tel">Tel.: +56226638365 </p>
+                                  <p class="tel">Banco de Chile</p>
 
-                                   <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
+                                   <a href="http://www.bancochile.cl/" target="_blank" class="url_agencia">www.bancodechile.cl</a>
                               </div>
                          
                        </div>
@@ -460,7 +459,7 @@
                  <div class="col-md-4">
                  <div class="box_agencia">
                        <div class="head_agencia">
-                         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.jpg">
+                         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
                        </div>
                        <div class="desc_servicio text-center">
                            <p> Sucursal BBVA abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br>
@@ -472,6 +471,40 @@
                        </div>
                      </div>
                  </div>		
+
+                     <div class="col-md-4">
+                       <div class="box_agencia">
+                             <div class="head_agencia">
+                               <img src="<?php bloginfo('template_url'); ?>/assets/img/banco_bci.png" height="40">
+                             </div>
+                             <div class="desc_servicio text-center">
+                             <p> Sucursal Banco BCI abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br> Haz todos tus trámites en un espacio cómodo y grato.
+                                  </p>
+                                  <p class="tel">Banco BCI</p>
+
+                                   <a href="http://www.bci.cl/" target="_blank" class="url_agencia">www.bci.cl</a>
+                              </div>
+                         
+                       </div>
+                 </div>
+
+
+
+                   <div class="col-md-4">
+                       <div class="box_agencia">
+                             <div class="head_agencia">
+                               <img src="<?php bloginfo('template_url'); ?>/assets/img/falabella.png" height="40">
+                             </div>
+                             <div class="desc_servicio text-center">
+                             <p> Sucursal Banco Falabella abierta de lunes a viernes de 09:00 a 21:00 Sábado - domingo y festivos 11:00 a 19:00 hrs. <br>Haz todos tus trámites y luego anda a buscar el regalo para esa persona tan especial!
+                                  </p>
+                                  <p class="tel">Banco Falabella</p>
+
+                                   <a href="http://www.bancofalabella.cl/" target="_blank" class="url_agencia">www.bancofalabella.cl</a>
+                              </div>
+                         
+                       </div>
+                 </div>
 				<?php } ?>  	                   
 			</div>                 
         </div>
