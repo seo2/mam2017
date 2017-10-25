@@ -3,13 +3,14 @@
   <div class="row">
     <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio" id="serv1box">
-          <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#content_transfer">
-              <img src="<?php bloginfo('template_url'); ?>/assets/img/transfer.svg"  class="center-block">
-              <p><?php echo $serv1; ?></p>
+          <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#content_farmacia">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/ico-farmacia.png"  class="center-block">
+            <!--   <p><?php echo $serv1; ?></p> -->
+                  <p>Farmacias</p>
           </a>
         </div>
         <div class="box_more_info">
-          <a  data-toggle="collapse" data-target="#content_transfer" ><?php echo $btn1; ?></a>
+          <a  data-toggle="collapse" data-target="#content_farmacia" ><?php echo $btn1; ?></a>
         </div>
     </div>
 
@@ -37,7 +38,7 @@
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_agencia" ><?php echo $btn1; ?></a>
           </div>
     </div>
-      
+
     <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio" id="serv4box">
           <a href="javascript:void(0); " class="borde_amarillo" data-toggle="collapse" data-target="#content_taxis">
@@ -49,116 +50,40 @@
           <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_taxis" ><?php echo $btn1; ?></a>
         </div>
     </div>
-	<?php	                                         
-	    $args = array(
-			'post_type' 		=> array('servicios_generales'),
-			'p' 				=> 1609
-	    );
-		$the_query = new WP_Query ($args);
-	    $i = 0;
-	    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-	    	$i++;
-	?>	 
-    <div id="content_transfer" class="content_servicio collapse">
-    	<div id="content_transferancla" class="anclita"></div>
+
+    <div id="content_farmacia" class="content_servicio collapse">
+    	<div id="content_farmaciaancla" class="anclita"></div>
     	<div class="container">
-        	<h4 class="divider verde"><?php the_title(); ?></h4>
-			<div class="close_servicio" data-target="#content_transfer"></div>
+        	<h4 class="divider verde">Farmacias</h4>
+			<div class="close_servicio" data-target="#serv1"></div>
 			<div class="row">
             	<div class="col-md-6 col-md-push-6">
-					<div class="img_servicio"  style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
+					       contenido farmacias
             	</div>
 				<div class="col-md-6 col-md-pull-6 ">
                     <div class="desc_servicio">
-                       <?php the_content(); ?>
+                     contenido farmacias
                     </div>
             	</div>
             </div>
-            <h4 class="divider verde"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $tit3; ?></h4>
+          <!--   <h4 class="divider verde"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $tit3; ?></h4> -->
             <div class="row">
             	<div class="col-sm-4">
-                   	<div class="box_ubicacion">
-                    	<h2> las condes </h2>
-						<div class="lista">
-                        	<ul class="dashed">
-								<li>Atton El Bosque</li>
-								<li>Atton Las Condes</li>
-								<li>Best Western Premier Marina</li>
-								<li>Grand Hyatt</li>
-								<li>Holiday Inn</li>
-								<li>Ibis Manquehue</li>
-								<li>Intercontinental</li>
-								<li>Marriot</li>
-								<li>Plaza El Bosque Las Condes</li>
-								<li>Plaza El Bosque Park Suites</li>
-								<li>NH Collection</li>
-								<li>Regal Pacific</li>
-								<li>Ritz Carlton</li>
-								<li>W Hotels</li>
-                        	</ul>
-                    	</div>
-					</div>
+                          dsadad
             	</div>
                 <div class="col-sm-4">
-                	<div class="box_ubicacion">
-						<h2>vitacura </h2>
-						<div class="lista">
-                     		<ul class="dashed">
-								<li>Atton Vitacura</li>
-								<li>Kennedy</li>
-								<li>Noi</li>
-								<li>Novotel</li>
-								<li>Cumbres Vitacura</li>
-							</ul>
-						</div>
-					</div>
-					<div class="box_ubicacion">
-						<h2> providencia</h2>
-						<div class="lista">
-							<ul class="dashed">
-							   <li>Four Points</li>
-							   <li>Ibis Providencia</li>
-							   <li>Neruda</li>
-							   <li>NH Ciudad de Santiago</li>
-							   <li>Santiago Park Plaza</li>
-							   <li>Sheraton y San Cristobal Tower</li>
-							   <li>Torremayor</li>
-							   <li>Solacera</li>
-							</ul>
-						</div>
-					</div>
+                        ffsdfsfds
             	</div>
                 <div class="col-sm-4">
-                	<div class="box_ubicacion">
-						<h2>centro</h2>
-						<div class="lista">
-							<ul class="dashed">
-								<li>Apart Hoteles Huerfanos 547:
-								Bellas Artes, Altamira, Amistar.</li>
-								<li>Apart Hoteles Monjitas 744: 
-								Monjitas Center, Met Suites,       
-								Relen Suites, Costa
-								Bellas Artes.</li>
-								<li>Crowne Plaza</li>
-								<li>Fundador</li>
-								<li>Galerias</li>
-								<li>Gen Suite</li>
-								<li>Panamericano</li>
-								<li>Serrano Apart</li>
-								<li>Plaza San Francisco</li>
-								<li>Principado de Asturias</li>
-								<li>Mercure</li>
-							</ul>
-						</div>
-					</div>
+                      fsfsfsf
 				</div>
-			</div> 
+			</div> <!-- row -->
 		</div> <!-- container -->
 	</div> <!-- content transfer -->
-	<?php endwhile; else: ?>
-	<?php endif; ?>
-	
-	<?php	                                         
+
+
+
+	<?php
 	    $args = array(
 			'post_type' 		=> array('servicios_generales'),
 			'p' 				=> 1615
@@ -167,7 +92,7 @@
 	    $i = 0;
 	    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
 	    	$i++;
-	?>	 	
+	?>
     <div id="content_casas_cambio" class="content_servicio collapse">
             <div id="content_casas_cambioancla" class="anclita"></div>
               <div class="container">
@@ -187,7 +112,7 @@
             </div><!-- casas de cambio -->
 	<?php endwhile; else: ?>
 	<?php endif; ?>
-    
+
     <div id="content_agencia" class="content_servicio collapse">
         <div id="content_agenciaancla" class="anclita"></div>
         <div class="container">
@@ -226,12 +151,12 @@
                           </div>
                           <div class="desc_servicio text-center">
                           <p>When it comes to travels, Cocha is the expert.  With more than 60 years of experience, this agency is dedicated to travel sales considering tickets, stays and tours all over the world, with professional advice to guarantee that everything works properly in an unforgettable trip.</p>
-                          <p>Vacations? Now!</p> 
+                          <p>Vacations? Now!</p>
                           <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
                           </div>
                     </div>
                 </div>
-				<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?> 
+				<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
                 <div class="col-md-4">
 					<div class="box_agencia">
                         <div class="head_agencia">
@@ -263,7 +188,7 @@
                           </div>
                           <div class="desc_servicio text-center">
                           <p>Quando se trata de viagens, Cocha é o expert. Acima de 60 anos de experiência, esta agencia está dedicada a venda de viagens que consideram passagens, estadias e tours por todo o mundo, com assessoramento profissional para que nada falte numa viagem inesquecível.</p>
-                          <p>Férias? Agora!</p> 
+                          <p>Férias? Agora!</p>
                           <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
                           </div>
                     </div>
@@ -278,7 +203,7 @@
                             <p> En Cocha encuentra la mejor alternativa para tu viaje. Cruceros, pasajes, paquetes turísticos y otros servicios que te ayudaran a disfrutar al máximo tu descanso.</p>
                             <p>Tel.: +562 464 18 00 </p>
                             <p>Mail : msolari@cocha.com</p>
-                            
+
                             <a href="http://www.cocha.cl/" target="_blank" class="url_agencia">www.cocha.cl</a>
                         </div>
                     </div>
@@ -289,8 +214,8 @@
                        <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
                       </div>
                       <div class="desc_servicio text-center">
-                        <p> Las vacaciones soñadas nunca fueron más simples de obtener que en nuestra tienda Lan Tam, 
-                        donde puedes comprar y reservar tus pasajes y paquetes turísticos, informarte de promociones, 
+                        <p> Las vacaciones soñadas nunca fueron más simples de obtener que en nuestra tienda Lan Tam,
+                        donde puedes comprar y reservar tus pasajes y paquetes turísticos, informarte de promociones,
                         descuentos y beneficios ¡todo en el mismo lugar! </p>
                         <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
                       </div>
@@ -304,21 +229,21 @@
                           <div class="desc_servicio text-center">
                           <p> Cuando de viajes se trata, Cocha es el experto. Con más de 60 años de experiencia,
                           esta agencia está dedicada a la venta de viajes que consideran pasajes,
-                          estadías y tours por todo el mundo, con asesoría profesional para que 
+                          estadías y tours por todo el mundo, con asesoría profesional para que
                           nada falle en un viaje inolvidable.</p>
-                          <p>¿Vacaciones? ¡Ahora!</p> 
+                          <p>¿Vacaciones? ¡Ahora!</p>
                           <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
                           </div>
                     </div>
                 </div> -->
-				<?php } ?>  	                
-                
-                
+				<?php } ?>
+
+
               </div>
         </div>
 	</div> <!-- content agencia -->
 
-	<?php	                                         
+	<?php
 	    $args = array(
 			'post_type' 		=> array('servicios_generales'),
 			'p' 				=> 1622
@@ -327,7 +252,7 @@
 	    $i = 0;
 	    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
 	    	$i++;
-	?>    
+	?>
     <div id="content_taxis" class="content_servicio collapse">
         <div id="content_taxisancla" class="anclita"></div>
         <div class="container">
@@ -359,6 +284,21 @@
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_bancos"><?php echo $btn1; ?></a>
           </div>
     </div>
+
+     <div class="col-xs-6 col-sm-3 col-md-3">
+        <div class="box_servicio" id="serv6box">
+          <a href="javascript:void(0);" class="borde_verde" data-toggle="collapse" data-target="#content_telefonia">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/ico-telefonia.png"   class="center-block">
+              <!-- <p><?php echo $serv5; ?></p> -->
+                  <p>Telefonía</p>
+          </a>
+        </div>
+         <div class="box_more_info">
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_telefonia"><?php echo $btn1; ?></a>
+          </div>
+    </div>
+
+
 
 <!--       <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio">
@@ -392,7 +332,7 @@
 
                                    <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
                               </div>
-                         
+
                        </div>
                  </div>
                  <div class="col-md-4">
@@ -408,8 +348,8 @@
                                    <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
                        </div>
                      </div>
-                 </div>				
-				<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?> 
+                 </div>
+				<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
                 <div class="col-md-4">
                        <div class="box_agencia">
                              <div class="head_agencia">
@@ -423,7 +363,7 @@
 
                                    <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
                               </div>
-                         
+
                        </div>
                  </div>
                  <div class="col-md-4">
@@ -439,7 +379,7 @@
                                    <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
                        </div>
                      </div>
-                 </div>		
+                 </div>
 				<?php }else{  ?>
                 <div class="col-md-4">
                        <div class="box_agencia">
@@ -453,7 +393,7 @@
 
                                    <a href="http://www.bancochile.cl/" target="_blank" class="url_agencia">www.bancodechile.cl</a>
                               </div>
-                         
+
                        </div>
                  </div>
                  <div class="col-md-4">
@@ -470,7 +410,7 @@
                                    <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
                        </div>
                      </div>
-                 </div>		
+                 </div>
 
                      <div class="col-md-4">
                        <div class="box_agencia">
@@ -484,7 +424,7 @@
 
                                    <a href="http://www.bci.cl/" target="_blank" class="url_agencia">www.bci.cl</a>
                               </div>
-                         
+
                        </div>
                  </div>
 
@@ -502,15 +442,155 @@
 
                                    <a href="http://www.bancofalabella.cl/" target="_blank" class="url_agencia">www.bancofalabella.cl</a>
                               </div>
-                         
+
                        </div>
                  </div>
-				<?php } ?>  	                   
-			</div>                 
+				<?php } ?>
+			</div> <!-- row -->
         </div>
     </div><!-- content bancos -->
-        
-        <!-- 
+
+    <div id="content_telefonia" class="content_servicio collapse">
+        <div id="content_telefoniaancla" class="anclita"></div>
+        <div class="container">
+            <h4 class="divider verde">Telefonía</h4>
+            <div class="close_servicio" data-target="#serv6"> </div>
+
+        </div>
+              <div class="row">
+                <?php if(ICL_LANGUAGE_CODE=='en'){ ?>
+                        <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Mondays to Fridays  <br>
+                                     from 9am to 2pm   <br>
+                                          </p>
+                                          <p class="tel">Telephone: +56226638365 </p>
+
+                                           <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+                         <div class="col-md-4">
+                         <div class="box_agencia">
+                               <div class="head_agencia">
+                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
+                               </div>
+                               <div class="desc_servicio text-center">
+                                    <p> Mondays to Fridays  <br>
+                                     from 9am to 2pm   <br>
+                                          </p>
+                                          <p class="tel"> Telephone: +56232054249 </p>
+                                           <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
+                               </div>
+                             </div>
+                         </div>
+                <?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
+                        <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Segunda a Sexta <br>
+                                     das 09:00h às 14:00h<br>
+                                          </p>
+                                          <p class="tel">Tel.: +56226638365 </p>
+
+                                           <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+                         <div class="col-md-4">
+                         <div class="box_agencia">
+                               <div class="head_agencia">
+                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
+                               </div>
+                               <div class="desc_servicio text-center">
+                                   <p> Segunda a Sexta <br>
+                                     das 09:00h às 14:00h <br>
+                                          </p>
+                                          <p class="tel"> Tel.: +56232054249 </p>
+                                           <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
+                               </div>
+                             </div>
+                         </div>
+                <?php }else{  ?>
+                        <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/banco-de-chile.jpg" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Sucursal Banco de Chile abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br> Haz todos tus trámites y luego vitrinéatelo todo!
+                                          </p>
+                                          <p class="tel">Banco de Chile</p>
+
+                                           <a href="http://www.bancochile.cl/" target="_blank" class="url_agencia">www.bancodechile.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+                         <div class="col-md-4">
+                         <div class="box_agencia">
+                               <div class="head_agencia">
+                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
+                               </div>
+                               <div class="desc_servicio text-center">
+                                   <p> Sucursal BBVA abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br>
+                                    Haz todos tus trámites y luego ¡tómate ese delicioso café que estabas esperando!
+                                     <br>
+                                          </p>
+                                          <p class="tel"> Banco BBVA</p>
+                                           <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
+                               </div>
+                             </div>
+                         </div>
+
+                             <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/banco_bci.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Sucursal Banco BCI abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br> Haz todos tus trámites en un espacio cómodo y grato.
+                                          </p>
+                                          <p class="tel">Banco BCI</p>
+
+                                           <a href="http://www.bci.cl/" target="_blank" class="url_agencia">www.bci.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+
+
+
+                           <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/falabella.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Sucursal Banco Falabella abierta de lunes a viernes de 09:00 a 21:00 Sábado - domingo y festivos 11:00 a 19:00 hrs. <br>Haz todos tus trámites y luego anda a buscar el regalo para esa persona tan especial!
+                                          </p>
+                                          <p class="tel">Banco Falabella</p>
+
+                                           <a href="http://www.bancofalabella.cl/" target="_blank" class="url_agencia">www.bancofalabella.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+                <?php } ?>
+              </div> <!-- row -->
+    </div>
+
+
+        <!--
           <div id="content_chip" class="content_servicio collapse">
            <div class="container">
               <h4 class="divider verde_oscuro">Tarjeta Arauco chip</h4>
@@ -518,16 +598,16 @@
                   <div class="row">
                       <div class="col-md-12">
                           <div class="desc_servicio">
-                                 <p>Arauco Pass y Arauco Chip son tarjetas que permiten prepagar los estacionamientos y así evitar 
+                                 <p>Arauco Pass y Arauco Chip son tarjetas que permiten prepagar los estacionamientos y así evitar
                                  pasar por cajeros cuando termines de realizar tus compras. ¿Qué cómodo, no te parece?</p>
 
                                  <section class="box_faq">
-                                  
+
                                                <div class="col-sm-12">
                                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                          
+
                                                              <h4>
                                                                <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q1" aria-expanded="true" aria-controls="q1">
                                                                    ¿DÓNDE OBTENERLA?
@@ -538,13 +618,13 @@
                                                          <div class="panel-body">
                                                               <p>Acercándose a los cajeros manuales de Central Parking, ubicado
                                                                   en el Acceso París y costado Clínica Arauco Salud nivel -1.</p>
-                                                         
+
                                                          </div>
                                                        </div>
                                                      </div>
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                          
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q2" aria-expanded="false" aria-controls="q2">
                                                              ¿CUÁNTO VALE?
@@ -560,7 +640,7 @@
                                                      </div>
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                          
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q3" aria-expanded="false" aria-controls="q3">
                                                              ¿Cuándo se activa la tarjeta?
@@ -578,7 +658,7 @@
 
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                          
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q4" aria-expanded="false" aria-controls="q3">
                                                              ¿CÓMO FUNCIONAN?
@@ -602,7 +682,7 @@
 
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                          
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q5" aria-expanded="false" aria-controls="q3">
                                                              ¿CÓMO SE CARGAN?
@@ -625,7 +705,7 @@
 
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                          
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q6" aria-expanded="false" aria-controls="q3">
                                                              ¿Qué hacer en caso de pérdida de la tarjeta?
@@ -654,7 +734,7 @@
 </div>
 
 
-    
+
 
 
 
