@@ -58,26 +58,36 @@
 			<div class="close_servicio" data-target="#serv1"></div>
 			<div class="row">
             	<div class="col-md-6 col-md-push-6">
-					       contenido farmacias
+					      
+             Cruz Verde<br>
+
+<p>Todos los productos y servicios orientados a cuidar la salud est&aacute;n en Farmacias Cruz Verde, una de las m&aacute;s importantes cadenas de farmacias chilenas. Una variada l&iacute;nea de productos cosm&eacute;ticos completa la oferta. Lo mejor en servicio, con personal capacitado y orientado a atender todas tus necesidades.
+
+Horario. Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
+
+     </p>
+                <a href="http://www.cruzverde.cl/" target="_blank" class="url_agencia">www.cruzverde.cl</a>
             	</div>
+            
 				<div class="col-md-6 col-md-pull-6 ">
                     <div class="desc_servicio">
-                     contenido farmacias
+                     <p>
+                      Salco Brand <br>
+La m&aacute;s completa farmacia que tiene adem&aacute;s a su disposici&oacute;n de sus clientes la zona de servicios, un lugar que cuenta con sillas de espera, m&aacute;quina de agua purificada y orientaci&oacute;n farmac&eacute;utica.
+
+Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
+
+
+
+                       
+                     </p>
+                     <a href="http://www.salcobrand.cl/" target="_blank" class="url_agencia">www.salcobrand.cl</a>
+
                     </div>
             	</div>
             </div>
           <!--   <h4 class="divider verde"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $tit3; ?></h4> -->
-            <div class="row">
-            	<div class="col-sm-4">
-                          dsadad
-            	</div>
-                <div class="col-sm-4">
-                        ffsdfsfds
-            	</div>
-                <div class="col-sm-4">
-                      fsfsfsf
-				</div>
-			</div> <!-- row -->
+             <!-- row -->
 		</div> <!-- container -->
 	</div> <!-- content transfer -->
 
@@ -387,11 +397,12 @@
                                <img src="<?php bloginfo('template_url'); ?>/assets/img/banco-de-chile.jpg" height="40">
                              </div>
                              <div class="desc_servicio text-center">
-                             <p> Sucursal Banco de Chile abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br> Haz todos tus trámites y luego vitrinéatelo todo!
+                             <p> Sucursal Banco de Chile abierta de lunes a viernes, de 09:00 a 14:00 hrs. <br>
+                              Haz todos tus trámites y luego vitrinéatelo todo!
                                   </p>
-                                  <p class="tel">Banco de Chile</p>
+                                  <p class="tel">Banco de chile</p>
 
-                                   <a href="http://www.bancochile.cl/" target="_blank" class="url_agencia">www.bancodechile.cl</a>
+                                   <a href="http://www.bancochile.cl/" target="_blank" class="url_agencia">www.bancochile.cl</a>
                               </div>
 
                        </div>
@@ -524,14 +535,14 @@
                         <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/banco-de-chile.jpg" height="40">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/claro.png" height="40">
                                      </div>
                                      <div class="desc_servicio text-center">
-                                     <p> Sucursal Banco de Chile abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br> Haz todos tus trámites y luego vitrinéatelo todo!
+                                     <p> Los módulos de venta Claro ofrecen una gran variedad de productos y servicios de telefonía celular: planes mixtos, planes cuenta exacta y prepagos con modernos equipos móviles. Y tú, ¿ya tienes un Smartphone?
                                           </p>
-                                          <p class="tel">Banco de Chile</p>
+                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
 
-                                           <a href="http://www.bancochile.cl/" target="_blank" class="url_agencia">www.bancodechile.cl</a>
+                                           <a href="http://www.clarochile.cl/" target="_blank" class="url_agencia">www.clarochile.cl</a>
                                       </div>
 
                                </div>
@@ -539,15 +550,14 @@
                          <div class="col-md-4">
                          <div class="box_agencia">
                                <div class="head_agencia">
-                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
+                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_entel.png" height="40">
                                </div>
                                <div class="desc_servicio text-center">
-                                   <p> Sucursal BBVA abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br>
-                                    Haz todos tus trámites y luego ¡tómate ese delicioso café que estabas esperando!
+                                   <p> Módulo de venta de planes, kit de prepago y tarjetas telefónicas. ¡Lo último en telefonía móvil al alcance de todos!
                                      <br>
                                           </p>
-                                          <p class="tel"> Banco BBVA</p>
-                                           <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
+                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+                                           <a href="http://www.entel.cl/" target="_blank" class="url_agencia">www.entel.cl</a>
                                </div>
                              </div>
                          </div>
@@ -555,32 +565,48 @@
                              <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/banco_bci.png" height="40">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_movistar.jpg" height="40">
                                      </div>
                                      <div class="desc_servicio text-center">
-                                     <p> Sucursal Banco BCI abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br> Haz todos tus trámites en un espacio cómodo y grato.
+                                     <p> Encuentra aquí todos los servicios Movistar: contratación de planes y productos, pago de cuentas, servicio al cliente, entre otros.
                                           </p>
-                                          <p class="tel">Banco BCI</p>
+                                          <p class="tel">Horario de atención: de lunes a viernes de 10:00 a 21:00 hrs., sábado de 10:00 a 14:00. Domingo y festivos cerrado.</p>
 
-                                           <a href="http://www.bci.cl/" target="_blank" class="url_agencia">www.bci.cl</a>
+                                           <a href="http://www.movistar.cl/" target="_blank" class="url_agencia">www.movistar.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+
+                           <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/vtr.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> VTR ofrece en su tienda de Arauco Maipú servicios como recepción de pagos de los distintos servicios de la empresa y atención a clientes en televisión por cable, telefonía e internet. Encuentra solución a tus requerimientos en la mayor comodidad del mal.
+                                          </p>
+                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+
+                                           <a href="http://www.vtr.cl/" target="_blank" class="url_agencia">www.vtr.cl</a>
                                       </div>
 
                                </div>
                          </div>
 
 
-
-                           <div class="col-md-4">
+                                 <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/falabella.png" height="40">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/wom.png" height="40">
                                      </div>
                                      <div class="desc_servicio text-center">
-                                     <p> Sucursal Banco Falabella abierta de lunes a viernes de 09:00 a 21:00 Sábado - domingo y festivos 11:00 a 19:00 hrs. <br>Haz todos tus trámites y luego anda a buscar el regalo para esa persona tan especial!
-                                          </p>
-                                          <p class="tel">Banco Falabella</p>
+                                     <p> WOM ofrece un servicio de excelencia, data de alta calidad y a un precio justo, gracias al despliegue de nuestra red propia con cobertura nacional. Podrás encontrar en este módulo el equipo que andas buscando. ¡Te esperamos!
 
-                                           <a href="http://www.bancofalabella.cl/" target="_blank" class="url_agencia">www.bancofalabella.cl</a>
+                                          </p>
+                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+
+                                           <a href="http://www.wom.cl/" target="_blank" class="url_agencia">www.wom.cl</a>
                                       </div>
 
                                </div>
