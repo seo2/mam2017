@@ -3,13 +3,14 @@
   <div class="row">
     <div class="col-xs-6">
         <div class="box_servicio" id="serv1xsbox">
-          <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#serv1xs">
-              <img src="<?php bloginfo('template_url'); ?>/assets/img/transfer.svg"  class="center-block">
-              <p><?php echo $serv1; ?></p>
+          <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#content_farmacia">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/ico-farmacia.png"  class="center-block">
+             <!--  <p><?php echo $serv1; ?></p> -->
+             <p>Farmacia</p>
           </a>
         </div>
         <div class="box_more_info">
-          <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv1xs"><?php echo $btn1; ?></a>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_farmacia"><?php echo $btn1; ?></a>
         </div>
     </div>
 
@@ -191,6 +192,62 @@
         </div>
     </div>
 
+    <div class="col-xs-6">
+        <div class="box_servicio" id="serv5xsbox">
+          <a href="javascript:void(0);" class="borde_verde" data-toggle="collapse" data-target="#content_telefonia">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/ico-telefonia.png"  class="center-block">
+              <!-- <p><?php echo $serv4; ?></p> -->
+              <p>telefonia</p>
+
+          </a>
+        </div>
+        <div class="box_more_info">
+          <a href="javascript:void(0);" ata-toggle="collapse" data-target="#serv4xs"><?php echo $btn1; ?></a>
+        </div>
+    </div>
+
+      <div id="content_farmacia" class="content_servicio collapse">
+      <div id="content_farmaciaancla" class="anclita"></div>
+      <div class="container">
+          <h4 class="divider verde">Farmacias</h4>
+      <div class="close_servicio" data-target="#serv1"></div>
+      <div class="row">
+              <div class="col-md-6 col-md-push-6">
+                 <div class="desc_servicio">
+                
+             Cruz Verde<br>
+
+<p>Todos los productos y servicios orientados a cuidar la salud est&aacute;n en Farmacias Cruz Verde, una de las m&aacute;s importantes cadenas de farmacias chilenas. Una variada l&iacute;nea de productos cosm&eacute;ticos completa la oferta. Lo mejor en servicio, con personal capacitado y orientado a atender todas tus necesidades.
+
+Horario. Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
+
+     </p>
+                <a href="http://www.cruzverde.cl/" target="_blank" class="url_agencia">www.cruzverde.cl</a>
+              </div>
+               </div>
+            
+        <div class="col-md-6 col-md-pull-6 ">
+                    <div class="desc_servicio">
+                     <p>
+                      Salco Brand <br>
+La m&aacute;s completa farmacia que tiene adem&aacute;s a su disposici&oacute;n de sus clientes la zona de servicios, un lugar que cuenta con sillas de espera, m&aacute;quina de agua purificada y orientaci&oacute;n farmac&eacute;utica.
+
+Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
+
+
+
+                       
+                     </p>
+                     <a href="http://www.salcobrand.cl/" target="_blank" class="url_agencia">www.salcobrand.cl</a>
+
+                    </div>
+              </div>
+            </div>
+          <!--   <h4 class="divider verde"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $tit3; ?></h4> -->
+             <!-- row -->
+    </div> <!-- container -->
+  </div>
+
     <div id="serv3xs" class="content_servicio collapse">
     	<div id="serv3xsancla" class="anclita_xs4"></div>
         	<div class="container">
@@ -301,16 +358,17 @@
                     </div>
                 </div> -->
                 <div class="col-md-4">
-                    <div class="box_agencia">
-                          <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
-                          </div>
-                          <div class="desc_servicio text-center">
-                          <p> En Cocha encuentra la mejor alternativa para tu viaje. Cruceros, pasajes, paquetes turísticos y otros servicios que te ayudaran a disfrutar al máximo tu descanso.</p>
-                          <p>Tel.: +562 464 18 00</p> 
-                          <p>Mail : msolari@cocha.com</p>
-                          <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
-                          </div>
+          <div class="box_agencia">
+                        <div class="head_agencia">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="70" height="45">
+                        </div>
+                        <div class="desc_servicio text-center">
+                            <p> En Cocha encuentra la mejor alternativa para tu viaje. Cruceros, pasajes, paquetes tur&iacute;sticos y otros servicios que te ayudaran a disfrutar al m&aacute;ximo tu descanso.</p>
+                            <p>Tel.: +562 464 18 00 </p>
+                            <p>Mail : msolari@cocha.com</p>
+
+                            <a href="http://www.cocha.cl/" target="_blank" class="url_agencia">www.cocha.cl</a>
+                        </div>
                     </div>
                 </div>
 				<?php } ?>  	                
@@ -374,6 +432,160 @@
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_chip_xs"><?php echo $btn1; ?></a>
           </div>
       </div> -->
+
+         <div id="content_telefonia" class="content_servicio collapse">
+        <div id="content_telefoniaancla" class="anclita"></div>
+        <div class="container">
+            <h4 class="divider verde">Telefonía</h4>
+            <div class="close_servicio" data-target="#serv6"> </div>
+
+        </div>
+              <div class="row">
+                <?php if(ICL_LANGUAGE_CODE=='en'){ ?>
+                        <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Mondays to Fridays  <br>
+                                     from 9am to 2pm   <br>
+                                          </p>
+                                          <p class="tel">Telephone: +56226638365 </p>
+
+                                           <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+                         <div class="col-md-4">
+                         <div class="box_agencia">
+                               <div class="head_agencia">
+                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
+                               </div>
+                               <div class="desc_servicio text-center">
+                                    <p> Mondays to Fridays  <br>
+                                     from 9am to 2pm   <br>
+                                          </p>
+                                          <p class="tel"> Telephone: +56232054249 </p>
+                                           <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
+                               </div>
+                             </div>
+                         </div>
+                <?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
+                        <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Segunda a Sexta <br>
+                                     das 09:00h às 14:00h<br>
+                                          </p>
+                                          <p class="tel">Tel.: +56226638365 </p>
+
+                                           <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+                         <div class="col-md-4">
+                         <div class="box_agencia">
+                               <div class="head_agencia">
+                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
+                               </div>
+                               <div class="desc_servicio text-center">
+                                   <p> Segunda a Sexta <br>
+                                     das 09:00h às 14:00h <br>
+                                          </p>
+                                          <p class="tel"> Tel.: +56232054249 </p>
+                                           <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
+                               </div>
+                             </div>
+                         </div>
+                <?php }else{  ?>
+                        <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/claro.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Los módulos de venta Claro ofrecen una gran variedad de productos y servicios de telefonía celular: planes mixtos, planes cuenta exacta y prepagos con modernos equipos móviles. Y tú, ¿ya tienes un Smartphone?
+                                          </p>
+                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+
+                                           <a href="http://www.clarochile.cl/" target="_blank" class="url_agencia">www.clarochile.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+                         <div class="col-md-4">
+                         <div class="box_agencia">
+                               <div class="head_agencia">
+                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_entel.png" height="40">
+                               </div>
+                               <div class="desc_servicio text-center">
+                                   <p> Módulo de venta de planes, kit de prepago y tarjetas telefónicas. ¡Lo último en telefonía móvil al alcance de todos!
+                                     <br>
+                                          </p>
+                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+                                           <a href="http://www.entel.cl/" target="_blank" class="url_agencia">www.entel.cl</a>
+                               </div>
+                             </div>
+                         </div>
+
+                             <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_movistar.jpg" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> Encuentra aquí todos los servicios Movistar: contratación de planes y productos, pago de cuentas, servicio al cliente, entre otros.
+                                          </p>
+                                          <p class="tel">Horario de atención: de lunes a viernes de 10:00 a 21:00 hrs., sábado de 10:00 a 14:00. Domingo y festivos cerrado.</p>
+
+                                           <a href="http://www.movistar.cl/" target="_blank" class="url_agencia">www.movistar.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+
+                           <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/vtr.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> VTR ofrece en su tienda de Arauco Maipú servicios como recepción de pagos de los distintos servicios de la empresa y atención a clientes en televisión por cable, telefonía e internet. Encuentra solución a tus requerimientos en la mayor comodidad del mal.
+                                          </p>
+                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+
+                                           <a href="http://www.vtr.cl/" target="_blank" class="url_agencia">www.vtr.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+
+
+                                 <div class="col-md-4">
+                               <div class="box_agencia">
+                                     <div class="head_agencia">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/wom.png" height="40">
+                                     </div>
+                                     <div class="desc_servicio text-center">
+                                     <p> WOM ofrece un servicio de excelencia, data de alta calidad y a un precio justo, gracias al despliegue de nuestra red propia con cobertura nacional. Podrás encontrar en este módulo el equipo que andas buscando. ¡Te esperamos!
+
+                                          </p>
+                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+
+                                           <a href="http://www.wom.cl/" target="_blank" class="url_agencia">www.wom.cl</a>
+                                      </div>
+
+                               </div>
+                         </div>
+                <?php } ?>
+              </div> <!-- row -->
+    </div>
 
     <div id="serv5xs" class="content_servicio collapse">
     	<div id="serv5xsancla" class="anclita_xs4"></div>
@@ -445,39 +657,61 @@
                 </div>		
 				<?php }else{  ?>
                 <div class="col-md-4">
-                    <div class="box_agencia">
+                       <div class="box_agencia">
                              <div class="head_agencia">
-                               <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
+                               <img src="<?php bloginfo('template_url'); ?>/assets/img/banco-de-chile.jpg" height="40">
                              </div>
                              <div class="desc_servicio text-center">
-                             <p> Lunes a Viernes <br>
-                             de 09:00 a 14:00 hrs  <br>
+                             <p> Sucursal Banco de Chile abierta de lunes a viernes, de 09:00 a 14:00 hrs. <br>
+                              Haz todos tus trámites y luego vitrinéatelo todo!
                                   </p>
-                                  <p class="tel">Tel.: +56226638365 </p>
+                                  <p class="tel">Banco de chile</p>
 
-                                   <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
+                                   <a href="http://www.bancochile.cl/" target="_blank" class="url_agencia">www.bancochile.cl</a>
                               </div>
-                         
-                    </div>
-                </div>
-                <div class="col-md-4">
-                	<div class="box_agencia">
+
+                       </div>
+                 </div>
+                 <div class="col-md-4">
+                 <div class="box_agencia">
                        <div class="head_agencia">
-                         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
+                         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
                        </div>
                        <div class="desc_servicio text-center">
-                           <p> Lunes a Viernes <br>
-                             de 09:00 a 14:00 hrs  <br>
+                           <p> Sucursal BBVA abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br>
+                            Haz todos tus trámites y luego ¡tómate ese delicioso café que estabas esperando!
+                             <br>
                                   </p>
-                                  <p class="tel"> Tel.: +56232054249 </p>
-                                   <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
+                                  <p class="tel"> Banco BBVA</p>
+                                   <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
                        </div>
                      </div>
-                </div>		
+                 </div>
+
+                     <div class="col-md-4">
+                       <div class="box_agencia">
+                             <div class="head_agencia">
+                               <img src="<?php bloginfo('template_url'); ?>/assets/img/banco_bci.png" height="40">
+                             </div>
+                             <div class="desc_servicio text-center">
+                             <p> Sucursal Banco BCI abierta de lunes a viernes, de 09:00 a 14:00 hrs.<br> Haz todos tus trámites en un espacio cómodo y grato.
+                                  </p>
+                                  <p class="tel">Banco BCI</p>
+
+                                   <a href="http://www.bci.cl/" target="_blank" class="url_agencia">www.bci.cl</a>
+                              </div>
+
+                       </div>
+                 </div>
 				<?php } ?>  	                   
 			</div> 
         </div>
-	</div><!-- content bancos -->
+	</div>
+
+
+
+
+  <!-- content bancos -->
 
           <!-- ARAUCO CHIP OCULTO -->
           <!--
