@@ -538,7 +538,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                         <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/claro.png" height="40">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/claro.png">
                                      </div>
                                      <div class="desc_servicio text-center">
                                      <p> Los módulos de venta Claro ofrecen una gran variedad de productos y servicios de telefonía celular: planes mixtos, planes cuenta exacta y prepagos con modernos equipos móviles. Y tú, ¿ya tienes un Smartphone?
@@ -568,7 +568,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                              <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_movistar.jpg" height="40">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_movistar.jpg" ">
                                      </div>
                                      <div class="desc_servicio text-center">
                                      <p> Encuentra aquí todos los servicios Movistar: contratación de planes y productos, pago de cuentas, servicio al cliente, entre otros.
@@ -584,7 +584,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                            <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/vtr.png" height="40">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/vtr.png" >
                                      </div>
                                      <div class="desc_servicio text-center">
                                      <p> VTR ofrece en su tienda de Arauco Maipú servicios como recepción de pagos de los distintos servicios de la empresa y atención a clientes en televisión por cable, telefonía e internet. Encuentra solución a tus requerimientos en la mayor comodidad del mal.
@@ -601,7 +601,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                                  <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/wom.png" height="40">
+                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/wom.png" >
                                      </div>
                                      <div class="desc_servicio text-center">
                                      <p> WOM ofrece un servicio de excelencia, data de alta calidad y a un precio justo, gracias al despliegue de nuestra red propia con cobertura nacional. Podrás encontrar en este módulo el equipo que andas buscando. ¡Te esperamos!
