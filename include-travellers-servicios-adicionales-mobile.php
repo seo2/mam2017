@@ -3,14 +3,14 @@
   <div class="row">
     <div class="col-xs-6">
         <div class="box_servicio" id="serv1xsbox">
-          <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#content_farmacia">
+          <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#serv1xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/ico-farmacia.png"  class="center-block">
              <!--  <p><?php echo $serv1; ?></p> -->
              <p>Farmacia</p>
           </a>
         </div>
         <div class="box_more_info">
-          <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_farmacia"><?php echo $btn1; ?></a>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv1xs"><?php echo $btn1; ?></a>
         </div>
     </div>
 
@@ -21,123 +21,164 @@
               <p><?php echo $serv2; ?></p>
           </a>
         </div>
-		<div class="box_more_info">
+    <div class="box_more_info">
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv2xs"><?php echo $btn1; ?></a>
         </div>
     </div>
 
-	<?php	                                         
-	    $args = array(
-			'post_type' 		=> array('servicios_generales'),
-			'p' 				=> 1609
-	    );
-		$the_query = new WP_Query ($args);
-	    $i = 0;
-	    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-	    	$i++;
-	?>	  
-            
+      <div id="serv1xs" class="content_servicio collapse">
+          <div id="serv1xsancla" class="anclita"></div>
+          <div class="container">
+              <h4 class="divider verde">Farmacias</h4>
+          <div class="close_servicio" data-target="#serv1xs"></div>
+          <div class="row">
+                  <div class="col-md-6 col-md-push-6">
+                     <div class="desc_servicio">
+
+                 Cruz Verde<br>
+
+                  <p>Todos los productos y servicios orientados a cuidar la salud están en Farmacias Cruz Verde, una de las más
+                  importantes cadenas de farmacias chilenas. Una variada línea de productos cosméticos completa la oferta.
+                  Lo mejor en servicio, con personal capacitado y orientado a atender todas tus necesidades.
+                  Horario. Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
+                  </p>
+                    <a href="http://www.cruzverde.cl/" target="_blank" class="url_agencia">www.cruzverde.cl</a>
+                  </div>
+                   </div>
+
+            <div class="col-md-6 col-md-pull-6 ">
+                        <div class="desc_servicio">
+                         <p>
+                          Salco Brand <br>
+                          La más completa farmacia que tiene además a su disposición de sus clientes la zona de servicios
+                           un lugar que cuenta con sillas de espera, máquina de agua purificada y orientación farmacéutica.
+                          Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
+                         </p>
+                         <a href="http://www.salcobrand.cl/" target="_blank" class="url_agencia">www.salcobrand.cl</a>
+                        </div>
+                  </div>
+                </div>
+              <!--   <h4 class="divider verde"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $tit3; ?></h4> -->
+                 <!-- row -->
+        </div> <!-- container -->
+      </div> <!-- fin servicio 1 -->
+
+<!--
+  <?php
+      $args = array(
+      'post_type'     => array('servicios_generales'),
+      'p'         => 1609
+      );
+    $the_query = new WP_Query ($args);
+      $i = 0;
+      if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+        $i++;
+  ?>
+
     <div id="serv1xs" class="content_servicio collapse">
-    	<div id="serv1xsancla" class="anclita_xs4"></div>
-    	<div class="container">
-        	<h4 class="divider verde"><?php the_title(); ?></h4>
-			<div class="close_servicio" data-target="#serv1xs"></div>
-			<div class="row">
-            	<div class="col-md-6 col-md-push-6">
-					<div class="img_servicio"  style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
-            	</div>
-				<div class="col-md-6 col-md-pull-6 ">
+      <div id="serv1xsancla" class="anclita_xs4"></div>
+      <div class="container">
+          <h4 class="divider verde"><?php the_title(); ?></h4>
+      <div class="close_servicio" data-target="#serv1xs"></div>
+      <div class="row">
+              <div class="col-md-6 col-md-push-6">
+          <div class="img_servicio"  style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
+              </div>
+        <div class="col-md-6 col-md-pull-6 ">
                     <div class="desc_servicio">
                        <?php the_content(); ?>
                     </div>
-            	</div>
+              </div>
             </div>
             <h4 class="divider verde"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $tit3; ?></h4>
             <div class="row">
-            	<div class="col-sm-4">
-                   	<div class="box_ubicacion">
-                    	<h2> las condes </h2>
-						<div class="lista">
-                        	<ul class="dashed">
-								<li>Atton El Bosque</li>
-								<li>Atton Las Condes</li>
-								<li>Best Western Premier Marina</li>
-								<li>Grand Hyatt</li>
-								<li>Holiday Inn</li>
-								<li>Ibis Manquehue</li>
-								<li>Intercontinental</li>
-								<li>Marriot</li>
-								<li>Plaza El Bosque Las Condes</li>
-								<li>Plaza El Bosque Park Suites</li>
-								<li>NH Collection</li>
-								<li>Regal Pacific</li>
-								<li>Ritz Carlton</li>
-								<li>W Hotels</li>
-                        	</ul>
-                    	</div>
-					</div>
-            	</div>
+              <div class="col-sm-4">
+                    <div class="box_ubicacion">
+                      <h2> las condes </h2>
+            <div class="lista">
+                          <ul class="dashed">
+                <li>Atton El Bosque</li>
+                <li>Atton Las Condes</li>
+                <li>Best Western Premier Marina</li>
+                <li>Grand Hyatt</li>
+                <li>Holiday Inn</li>
+                <li>Ibis Manquehue</li>
+                <li>Intercontinental</li>
+                <li>Marriot</li>
+                <li>Plaza El Bosque Las Condes</li>
+                <li>Plaza El Bosque Park Suites</li>
+                <li>NH Collection</li>
+                <li>Regal Pacific</li>
+                <li>Ritz Carlton</li>
+                <li>W Hotels</li>
+                          </ul>
+                      </div>
+          </div>
+              </div>
                 <div class="col-sm-4">
-                	<div class="box_ubicacion">
-						<h2>vitacura </h2>
-						<div class="lista">
-                     		<ul class="dashed">
-								<li>Atton Vitacura</li>
-								<li>Kennedy</li>
-								<li>Noi</li>
-								<li>Novotel</li>
-								<li>Cumbres Vitacura</li>
-							</ul>
-						</div>
-					</div>
-					<div class="box_ubicacion">
-						<h2> providencia</h2>
-						<div class="lista">
-							<ul class="dashed">
-							   <li>Four Points</li>
-							   <li>Ibis Providencia</li>
-							   <li>Neruda</li>
-							   <li>NH Ciudad de Santiago</li>
-							   <li>Santiago Park Plaza</li>
-							   <li>Sheraton y San Cristobal Tower</li>
-							   <li>Torremayor</li>
-							   <li>Solacera</li>
-							</ul>
-						</div>
-					</div>
-            	</div>
+                  <div class="box_ubicacion">
+            <h2>vitacura </h2>
+            <div class="lista">
+                        <ul class="dashed">
+                <li>Atton Vitacura</li>
+                <li>Kennedy</li>
+                <li>Noi</li>
+                <li>Novotel</li>
+                <li>Cumbres Vitacura</li>
+              </ul>
+            </div>
+          </div>
+          <div class="box_ubicacion">
+            <h2> providencia</h2>
+            <div class="lista">
+              <ul class="dashed">
+                 <li>Four Points</li>
+                 <li>Ibis Providencia</li>
+                 <li>Neruda</li>
+                 <li>NH Ciudad de Santiago</li>
+                 <li>Santiago Park Plaza</li>
+                 <li>Sheraton y San Cristobal Tower</li>
+                 <li>Torremayor</li>
+                 <li>Solacera</li>
+              </ul>
+            </div>
+          </div>
+              </div>
                 <div class="col-sm-4">
-                	<div class="box_ubicacion">
-						<h2>centro</h2>
-						<div class="lista">
-							<ul class="dashed">
-								<li>Apart Hoteles Huerfanos 547:
-								Bellas Artes, Altamira, Amistar.</li>
-								<li>Apart Hoteles Monjitas 744: 
-								Monjitas Center, Met Suites,       
-								Relen Suites, Costa
-								Bellas Artes.</li>
-								<li>Crowne Plaza</li>
-								<li>Fundador</li>
-								<li>Galerias</li>
-								<li>Gen Suite</li>
-								<li>Panamericano</li>
-								<li>Serrano Apart</li>
-								<li>Plaza San Francisco</li>
-								<li>Principado de Asturias</li>
-								<li>Mercure</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> 
-		</div> <!-- container -->
-	</div> <!-- content transfer -->
+                  <div class="box_ubicacion">
+            <h2>centro</h2>
+            <div class="lista">
+              <ul class="dashed">
+                <li>Apart Hoteles Huerfanos 547:
+                Bellas Artes, Altamira, Amistar.</li>
+                <li>Apart Hoteles Monjitas 744:
+                Monjitas Center, Met Suites,
+                Relen Suites, Costa
+                Bellas Artes.</li>
+                <li>Crowne Plaza</li>
+                <li>Fundador</li>
+                <li>Galerias</li>
+                <li>Gen Suite</li>
+                <li>Panamericano</li>
+                <li>Serrano Apart</li>
+                <li>Plaza San Francisco</li>
+                <li>Principado de Asturias</li>
+                <li>Mercure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<?php endwhile; else: ?>
-	<?php endif; ?>
-	
-	<?php	                                         
+  <?php endwhile; else: ?>
+  <?php endif; ?> -->
+
+
+
+
+	<?php
 	    $args = array(
 			'post_type' 		=> array('servicios_generales'),
 			'p' 				=> 1615
@@ -167,7 +208,7 @@
 
 	<?php endwhile; else: ?>
 	<?php endif; ?>
-   
+
       <div class="col-xs-6">
         <div class="box_servicio" id="serv3xsbox">
           <a href="javascript:void(0);" class="borde_naranja" data-toggle="collapse" data-target="#serv3xs">
@@ -179,7 +220,7 @@
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv3xs"><?php echo $btn1; ?></a>
           </div>
     </div>
-      
+
       <div class="col-xs-6">
         <div class="box_servicio" id="serv4xsbox">
           <a href="javascript:void(0);" class="borde_amarillo" data-toggle="collapse" data-target="#serv4xs">
@@ -192,12 +233,185 @@
         </div>
     </div>
 
+
+    <!-- CONTENIDO SERVICIO 3 Y 4 -->
+
+        <div id="serv3xs" class="content_servicio collapse">
+          <div id="serv3xsancla" class="anclita_xs4"></div>
+              <div class="container">
+              <h4 class="divider naranja"><?php echo $serv3; ?></h4>
+                <div class="close_servicio" data-target="#serv3xs"> </div>
+                <div class="row">
+            <?php if(ICL_LANGUAGE_CODE=='en'){ ?>
+                    <div class="col-md-4">
+              <div class="box_agencia">
+                            <div class="head_agencia">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
+                            </div>
+                            <div class="desc_servicio text-center">
+                                <p>It offers culture, entertainment and recreation through safe, secure and quality tourist services that flexibly show the most relevant tourist attractions in Santiago and its surroundings.</p>
+                                <p>Telephone: +56228201000 </p>
+                                <p>Currency type: Dollar, Brazilian Reais, Argentinian Pesos, Euros and others.</p>
+                                <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                       <div class="box_agencia">
+                          <div class="head_agencia">
+                           <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
+                          </div>
+                          <div class="desc_servicio text-center">
+                            <p>Dream vacations are easier than ever in our Lan Tam store where you can buy and reserve your tickets and tourist packages, and get information about promotions, discounts and benefits…everything at the same place!</p>
+                            <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box_agencia">
+                              <div class="head_agencia">
+                                <img class="img-responsive"> src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="cocha" title="cocha" >
+                              </div>
+                              <div class="desc_servicio text-center">
+                              <p>When it comes to travels, Cocha is the expert.  With more than 60 years of experience, this agency is
+                              dedicated to travel sales considering tickets, stays and tours all over the world, with professional advice
+                            to guarantee that everything works properly in an unforgettable trip.</p>
+                              <p>Vacations? Now!</p>
+                              <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
+                              </div>
+                        </div>
+                    </div>
+            <?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
+                    <div class="col-md-4">
+              <div class="box_agencia">
+                            <div class="head_agencia">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
+                            </div>
+                            <div class="desc_servicio text-center">
+                                <p>Oferece cultura e diversão através de serviços turísticos seguros, confiáveis e de alta qualidade que,
+                                de forma flexível, mostram os atrativos turísticos de Santiago e seus entornos</p>
+                                <p>Tel.: +56228201000 </p>
+                                <p>Tipo de moeda: Dólar, Reais Brasileiros, Pesos Argentinos, Euros e outras.</p>
+                                <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                       <div class="box_agencia">
+                          <div class="head_agencia">
+                           <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
+                          </div>
+                          <div class="desc_servicio text-center">
+                            <p>As férias sonhadas nunca foram mais simples de obter na nossa loja LATAM, onde é possível comprar e
+                            reservar suas passagens e pacotes turísticos, obter informações de promoções, descontos e benefícios. Tudo no mesmo lugar.</p>
+                            <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box_agencia">
+                              <div class="head_agencia">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
+                              </div>
+                              <div class="desc_servicio text-center">
+                              <p>Quando se trata de viagens, Cocha é o expert. Acima de 60 anos de experiência, esta agencia está
+                              dedicada a venda de viagens que consideram passagens, estadias e tours por todo o mundo,
+                            com assessoramento profissional para que nada falte numa viagem inesquecível.</p>
+                              <p>Férias? Agora!</p>
+                              <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
+                              </div>
+                        </div>
+                    </div>
+            <?php }else{  ?>
+                    <!-- <div class="col-md-4">
+              <div class="box_agencia">
+                            <div class="head_agencia">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
+                            </div>
+                            <div class="desc_servicio text-center">
+                                <p> Ofrece cultura, esparcimiento y diversión a través de servicios turísticos seguros,
+                                confiables y de alta calidad que, de forma flexible,
+                                muestran los atractivos turísticos más relevantes de Santiago y de sus alrededores.</p>
+                                <p>Tel.: +56228201000 </p>
+                                <p> tipo de moneda: Dólar, Reales Brasileños, Pesos Argentinos, Euros y otras.</p>
+                                <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-4">
+                       <div class="box_agencia">
+                          <div class="head_agencia">
+                           <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
+                          </div>
+                          <div class="desc_servicio text-center">
+                            <p> Las vacaciones soñadas nunca fueron más simples de obtener que en nuestra tienda Lan Tam,
+                            donde puedes comprar y reservar tus pasajes y paquetes turísticos, informarte de promociones,
+                            descuentos y beneficios ¡todo en el mismo lugar! </p>
+                            <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
+                          </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-4">
+              <div class="box_agencia">
+                            <div class="head_agencia">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="">
+                            </div>
+                            <div class="desc_servicio text-center">
+                                <p> En Cocha encuentra la mejor alternativa para tu viaje. Cruceros, pasajes, paquetes
+                                turísticos y otros servicios que te ayudaran a disfrutar al máximo tu descanso.</p>
+                                <p>Tel.: +562 464 18 00 </p>
+                                <p>Mail : msolari@cocha.com</p>
+
+                                <a href="http://www.cocha.cl/" target="_blank" class="url_agencia">www.cocha.cl</a>
+                            </div>
+                        </div>
+                    </div>
+            <?php } ?>
+
+
+                  </div>
+            </div>
+        </div> <!-- content agencia -->
+
+      <?php
+          $args = array(
+          'post_type'     => array('servicios_generales'),
+          'p'         => 1622
+          );
+        $the_query = new WP_Query ($args);
+          $i = 0;
+          if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+            $i++;
+      ?>
+        <div id="serv4xs" class="content_servicio collapse">
+            <div id="serv4xsancla" class="anclita_xs4"></div>
+            <div class="container">
+                <h4 class="divider amarillo"><?php the_title(); ?></h4>
+                <div class="close_servicio" data-target="#serv4xs"> </div>
+                <div class="row">
+                  <div class="col-md-6 col-md-push-6">
+                      <div class="img_servicio"  style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
+                    </div>
+                    <div class="col-md-6 col-md-pull-6 ">
+                      <div class="desc_servicio">
+                <?php the_content(); ?>
+              </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- content taxis -->
+
+      <?php endwhile; else: ?>
+      <?php endif; ?>
+
+
+
     <div class="col-xs-6">
         <div class="box_servicio" id="serv5xsbox">
           <a href="javascript:void(0);" class="borde_verde" data-toggle="collapse" data-target="#content_telefonia">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/ico-telefonia.png"  class="center-block">
               <!-- <p><?php echo $serv4; ?></p> -->
-              <p>telefonia</p>
+              <p>Telefonía</p>
 
           </a>
         </div>
@@ -206,209 +420,7 @@
         </div>
     </div>
 
-      <div id="content_farmacia" class="content_servicio collapse">
-      <div id="content_farmaciaancla" class="anclita"></div>
-      <div class="container">
-          <h4 class="divider verde">Farmacias</h4>
-      <div class="close_servicio" data-target="#serv1"></div>
-      <div class="row">
-              <div class="col-md-6 col-md-push-6">
-                 <div class="desc_servicio">
-                
-             Cruz Verde<br>
 
-<p>Todos los productos y servicios orientados a cuidar la salud est&aacute;n en Farmacias Cruz Verde, una de las m&aacute;s importantes cadenas de farmacias chilenas. Una variada l&iacute;nea de productos cosm&eacute;ticos completa la oferta. Lo mejor en servicio, con personal capacitado y orientado a atender todas tus necesidades.
-
-Horario. Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
-
-     </p>
-                <a href="http://www.cruzverde.cl/" target="_blank" class="url_agencia">www.cruzverde.cl</a>
-              </div>
-               </div>
-            
-        <div class="col-md-6 col-md-pull-6 ">
-                    <div class="desc_servicio">
-                     <p>
-                      Salco Brand <br>
-La m&aacute;s completa farmacia que tiene adem&aacute;s a su disposici&oacute;n de sus clientes la zona de servicios, un lugar que cuenta con sillas de espera, m&aacute;quina de agua purificada y orientaci&oacute;n farmac&eacute;utica.
-
-Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
-
-
-
-                       
-                     </p>
-                     <a href="http://www.salcobrand.cl/" target="_blank" class="url_agencia">www.salcobrand.cl</a>
-
-                    </div>
-              </div>
-            </div>
-          <!--   <h4 class="divider verde"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $tit3; ?></h4> -->
-             <!-- row -->
-    </div> <!-- container -->
-  </div>
-
-    <div id="serv3xs" class="content_servicio collapse">
-    	<div id="serv3xsancla" class="anclita_xs4"></div>
-        	<div class="container">
-        	<h4 class="divider naranja"><?php echo $serv3; ?></h4>
-            <div class="close_servicio" data-target="#serv3xs"> </div>
-            <div class="row">
-				<?php if(ICL_LANGUAGE_CODE=='en'){ ?>
-                <div class="col-md-4">
-					<div class="box_agencia">
-                        <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
-                        </div>
-                        <div class="desc_servicio text-center">
-                            <p>It offers culture, entertainment and recreation through safe, secure and quality tourist services that flexibly show the most relevant tourist attractions in Santiago and its surroundings.</p>
-                            <p>Telephone: +56228201000 </p>
-                            <p>Currency type: Dollar, Brazilian Reais, Argentinian Pesos, Euros and others.</p>
-                            <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                   <div class="box_agencia">
-                      <div class="head_agencia">
-                       <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
-                      </div>
-                      <div class="desc_servicio text-center">
-                        <p>Dream vacations are easier than ever in our Lan Tam store where you can buy and reserve your tickets and tourist packages, and get information about promotions, discounts and benefits…everything at the same place!</p>
-                        <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box_agencia">
-                          <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
-                          </div>
-                          <div class="desc_servicio text-center">
-                          <p>When it comes to travels, Cocha is the expert.  With more than 60 years of experience, this agency is dedicated to travel sales considering tickets, stays and tours all over the world, with professional advice to guarantee that everything works properly in an unforgettable trip.</p>
-                          <p>Vacations? Now!</p> 
-                          <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
-                          </div>
-                    </div>
-                </div>
-				<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?> 
-                <div class="col-md-4">
-					<div class="box_agencia">
-                        <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
-                        </div>
-                        <div class="desc_servicio text-center">
-                            <p>Oferece cultura e diversão através de serviços turísticos seguros, confiáveis e de alta qualidade que, de forma flexível, mostram os atrativos turísticos de Santiago e seus entornos</p>
-                            <p>Tel.: +56228201000 </p>
-                            <p>Tipo de moeda: Dólar, Reais Brasileiros, Pesos Argentinos, Euros e outras.</p>
-                            <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                   <div class="box_agencia">
-                      <div class="head_agencia">
-                       <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
-                      </div>
-                      <div class="desc_servicio text-center">
-                        <p>As férias sonhadas nunca foram mais simples de obter na nossa loja LATAM, onde é possível comprar e reservar suas passagens e pacotes turísticos, obter informações de promoções, descontos e benefícios. Tudo no mesmo lugar.</p>
-                        <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box_agencia">
-                          <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
-                          </div>
-                          <div class="desc_servicio text-center">
-                          <p>Quando se trata de viagens, Cocha é o expert. Acima de 60 anos de experiência, esta agencia está dedicada a venda de viagens que consideram passagens, estadias e tours por todo o mundo, com assessoramento profissional para que nada falte numa viagem inesquecível.</p>
-                          <p>Férias? Agora!</p> 
-                          <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
-                          </div>
-                    </div>
-                </div>
-				<?php }else{  ?>
-                <!-- <div class="col-md-4">
-					<div class="box_agencia">
-                        <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
-                        </div>
-                        <div class="desc_servicio text-center">
-                            <p> Ofrece cultura, esparcimiento y diversión a través de servicios turísticos seguros, 
-                            confiables y de alta calidad que, de forma flexible,
-                            muestran los atractivos turísticos más relevantes de Santiago y de sus alrededores.</p>
-                            <p>Tel.: +56228201000 </p>
-                            <p> tipo de moneda: Dólar, Reales Brasileños, Pesos Argentinos, Euros y otras.</p>
-                            <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-4">
-                   <div class="box_agencia">
-                      <div class="head_agencia">
-                       <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
-                      </div>
-                      <div class="desc_servicio text-center">
-                        <p> Las vacaciones soñadas nunca fueron más simples de obtener que en nuestra tienda Lan Tam, 
-                        donde puedes comprar y reservar tus pasajes y paquetes turísticos, informarte de promociones, 
-                        descuentos y beneficios ¡todo en el mismo lugar! </p>
-                        <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
-                      </div>
-                    </div>
-                </div> -->
-                <div class="col-md-4">
-          <div class="box_agencia">
-                        <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="70" height="45">
-                        </div>
-                        <div class="desc_servicio text-center">
-                            <p> En Cocha encuentra la mejor alternativa para tu viaje. Cruceros, pasajes, paquetes tur&iacute;sticos y otros servicios que te ayudaran a disfrutar al m&aacute;ximo tu descanso.</p>
-                            <p>Tel.: +562 464 18 00 </p>
-                            <p>Mail : msolari@cocha.com</p>
-
-                            <a href="http://www.cocha.cl/" target="_blank" class="url_agencia">www.cocha.cl</a>
-                        </div>
-                    </div>
-                </div>
-				<?php } ?>  	                
-                
-                
-              </div>
-        </div>
-    </div> <!-- content agencia -->
-
-	<?php	                                         
-	    $args = array(
-			'post_type' 		=> array('servicios_generales'),
-			'p' 				=> 1622
-	    );
-		$the_query = new WP_Query ($args);
-	    $i = 0;
-	    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-	    	$i++;
-	?>
-    <div id="serv4xs" class="content_servicio collapse">
-        <div id="serv4xsancla" class="anclita_xs4"></div>
-        <div class="container">
-            <h4 class="divider amarillo"><?php the_title(); ?></h4>
-            <div class="close_servicio" data-target="#serv4xs"> </div>
-            <div class="row">
-            	<div class="col-md-6 col-md-push-6">
-                	<div class="img_servicio"  style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
-                </div>
-                <div class="col-md-6 col-md-pull-6 ">
-                	<div class="desc_servicio">
-						<?php the_content(); ?>
-					</div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- content taxis -->
-
-	<?php endwhile; else: ?>
-	<?php endif; ?>
-     
       <div class="col-xs-6">
          <div class="box_servicio" id="serv5xsbox">
           <a href="javascript:void(0);" class="borde_rojo" data-toggle="collapse" data-target="#serv5xs">
@@ -507,13 +519,12 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                         <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/claro.png" height="40">
+                                       <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/claro.png">
                                      </div>
                                      <div class="desc_servicio text-center">
-                                     <p> Los módulos de venta Claro ofrecen una gran variedad de productos y servicios de telefonía celular: planes mixtos, planes cuenta exacta y prepagos con modernos equipos móviles. Y tú, ¿ya tienes un Smartphone?
-                                          </p>
+                                     <p> Los módulos de venta Claro ofrecen una gran variedad de productos y servicios de telefonía celular:
+                                      planes mixtos, planes cuenta exacta y prepagos con modernos equipos móviles. Y tú, ¿ya tienes un Smartphone?</p>
                                           <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
-
                                            <a href="http://www.clarochile.cl/" target="_blank" class="url_agencia">www.clarochile.cl</a>
                                       </div>
 
@@ -522,14 +533,13 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                          <div class="col-md-4">
                          <div class="box_agencia">
                                <div class="head_agencia">
-                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_entel.png" height="40">
+                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/logo_entel.png">
                                </div>
                                <div class="desc_servicio text-center">
-                                   <p> Módulo de venta de planes, kit de prepago y tarjetas telefónicas. ¡Lo último en telefonía móvil al alcance de todos!
-                                     <br>
-                                          </p>
-                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
-                                           <a href="http://www.entel.cl/" target="_blank" class="url_agencia">www.entel.cl</a>
+                                   <p> Módulo de venta de planes, kit de prepago y tarjetas telefónicas. ¡Lo último en telefonía móvil al alcance de todos!</p>
+                                   <br>
+                                  <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+                                  <a href="http://www.entel.cl/" target="_blank" class="url_agencia">www.entel.cl</a>
                                </div>
                              </div>
                          </div>
@@ -537,12 +547,13 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                              <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_movistar.jpg" height="40">
+                                       <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/logo_movistar.jpg">
                                      </div>
                                      <div class="desc_servicio text-center">
-                                     <p> Encuentra aquí todos los servicios Movistar: contratación de planes y productos, pago de cuentas, servicio al cliente, entre otros.
-                                          </p>
-                                          <p class="tel">Horario de atención: de lunes a viernes de 10:00 a 21:00 hrs., sábado de 10:00 a 14:00. Domingo y festivos cerrado.</p>
+                                     <p> Encuentra aquí todos los servicios Movistar: contratación de planes y productos,
+                                      pago de cuentas, servicio al cliente, entre otros.</p>
+                                          <p class="tel">Horario de atención: de lunes a viernes de 10:00 a 21:00 hrs.,
+                                          sábado de 10:00 a 14:00. Domingo y festivos cerrado.</p>
 
                                            <a href="http://www.movistar.cl/" target="_blank" class="url_agencia">www.movistar.cl</a>
                                       </div>
@@ -553,10 +564,12 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                            <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/vtr.png" height="40">
+                                       <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/vtr.png" height="40">
                                      </div>
                                      <div class="desc_servicio text-center">
-                                     <p> VTR ofrece en su tienda de Arauco Maipú servicios como recepción de pagos de los distintos servicios de la empresa y atención a clientes en televisión por cable, telefonía e internet. Encuentra solución a tus requerimientos en la mayor comodidad del mal.
+                                     <p> VTR ofrece en su tienda de Arauco Maipú servicios como recepción de pagos de los distintos
+                                      servicios de la empresa y atención a clientes en televisión por cable, telefonía e internet. Encuentra solución
+                                      a tus requerimientos en la mayor comodidad del mal.
                                           </p>
                                           <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
 
@@ -570,10 +583,11 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                                  <div class="col-md-4">
                                <div class="box_agencia">
                                      <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/wom.png" height="40">
+                                       <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/wom.png" height="40">
                                      </div>
                                      <div class="desc_servicio text-center">
-                                     <p> WOM ofrece un servicio de excelencia, data de alta calidad y a un precio justo, gracias al despliegue de nuestra red propia con cobertura nacional. Podrás encontrar en este módulo el equipo que andas buscando. ¡Te esperamos!
+                                     <p> WOM ofrece un servicio de excelencia, data de alta calidad y a un precio justo, gracias al despliegue de
+                                      nuestra red propia con cobertura nacional. Podrás encontrar en este módulo el equipo que andas buscando. ¡Te esperamos!
 
                                           </p>
                                           <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
@@ -607,7 +621,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
                                    <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
                               </div>
-                         
+
                        </div>
                  </div>
                  <div class="col-md-4">
@@ -623,8 +637,8 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                                    <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
                        </div>
                      </div>
-                </div>				
-				<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?> 
+                </div>
+				<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
                 <div class="col-md-4">
                        <div class="box_agencia">
                              <div class="head_agencia">
@@ -638,7 +652,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
                                    <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
                               </div>
-                         
+
                        </div>
                  </div>
                  <div class="col-md-4">
@@ -654,7 +668,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                                    <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
                        </div>
                      </div>
-                </div>		
+                </div>
 				<?php }else{  ?>
                 <div class="col-md-4">
                        <div class="box_agencia">
@@ -703,8 +717,8 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
                        </div>
                  </div>
-				<?php } ?>  	                   
-			</div> 
+				<?php } ?>
+			</div>
         </div>
 	</div>
 
@@ -722,7 +736,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                   <div class="row">
                       <div class="col-md-12">
                           <div class="desc_servicio">
-                                 <p>Arauco Pass y Arauco Chip son tarjetas que permiten prepagar los estacionamientos y así evitar 
+                                 <p>Arauco Pass y Arauco Chip son tarjetas que permiten prepagar los estacionamientos y así evitar
                                  pasar por cajeros cuando termines de realizar tus compras. ¿Qué cómodo, no te parece?</p>
 
                                         <section class="box_faq">
@@ -730,7 +744,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                        
+
                                                              <h4>
                                                                <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q1_xs" aria-expanded="true" aria-controls="q1">
                                                                    ¿DÓNDE OBTENERLA?
@@ -741,13 +755,13 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                                                          <div class="panel-body">
                                                               <p>Acercándose a los cajeros manuales de Central Parking, ubicado
                                                                   en el Acceso París y costado Clínica Arauco Salud nivel -1.</p>
-                                                         
+
                                                          </div>
                                                        </div>
                                                      </div>
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                           
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q2_xs" aria-expanded="false" aria-controls="q2">
                                                              ¿CUÁNTO VALE?
@@ -763,7 +777,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                                                      </div>
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                           
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q3_xs" aria-expanded="false" aria-controls="q3">
                                                              ¿Cuándo se activa la tarjeta?
@@ -781,7 +795,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                           
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q4_xs" aria-expanded="false" aria-controls="q3">
                                                              ¿CÓMO FUNCIONAN?
@@ -805,7 +819,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                          
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q5_xs" aria-expanded="false" aria-controls="q3">
                                                              ¿CÓMO SE CARGAN?
@@ -828,7 +842,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
                                                      <div class="panel panel-default">
                                                        <div class="panel-heading" role="tab" id="">
-                                                          
+
                                                          <h4 class="panel-title">
                                                            <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q6_xs" aria-expanded="false" aria-controls="q3">
                                                              ¿Qué hacer en caso de pérdida de la tarjeta?
@@ -851,7 +865,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                           </div>
                       </div>
                   </div>
-              </div> 
+              </div>
           </div> end content arauco chip -->
 
 
@@ -859,7 +873,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 </div>
 
 
-    
+
 
 
 
