@@ -43,27 +43,31 @@ if(ICL_LANGUAGE_CODE=='en'){
     	$i++;
 ?>	
         	<div class="row">
-              <div class="col-sm-6 col-md-6">
+             <div class="col-sm-6 col-md-6">
                   <div class="box">
                         <div class="box_slider owl-carousel owl-theme ">
-					   	<?php
-						   	$e = 0;
-							$sliders = get_order_group('distrito_de_lujo_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	                        
-                          <div class="item">
-                              <a href="<?php bloginfo('url'); ?>/distrito-de-lujo">
-	                            <?php if($e==1){ ?>
-                                <div class="logo_seccion logo_distrito" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_distrito.svg);"> </div>
+              <?php
+                $e = 0;
+              $sliders = get_order_group('boulevard_imagen_slider');
+              foreach($sliders as $slider){  
+                $e++; 
+            ?>  
+                              <div class="item">
+                                  <a href="<?php bloginfo('url'); ?>/boulevard">     
+                              <?php if($e==1){ ?>
+                                       <div class="caption">
+                                          <p>&nbsp </p>
+                                           <p>Nuestras<p>
+                                           <h3>Tiendas</h3>
+                                           <div class="divider"> </div>
+                                       </div>
                                 <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('distrito_de_lujo_imagen_slider',$slider); ?>);"> </div>
-                              </a>
-                          </div>
+                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>                       
+                                  </a>
+                               </div> <!-- item -->
                         <?php } ?>
-                          
-                      </div><!-- box slider  -->
-                  </div> <!-- slider distrito -->
+                        </div><!-- box slider  -->
+                 </div>
               </div> 
 
               <div class="col-sm-6 col-md-6">
@@ -80,7 +84,8 @@ if(ICL_LANGUAGE_CODE=='en'){
 	                            <?php if($e==1){ ?>
                                        <div class="caption">
                                           <p>&nbsp </p>
-                                           <h3>boulevard </h3>
+                                           <p>Nuestra variedad en <p>
+                                           <h3>Patio comida</h3>
                                            <div class="divider"> </div>
                                        </div>
                                 <?php } ?>
@@ -92,49 +97,58 @@ if(ICL_LANGUAGE_CODE=='en'){
                  </div>
               </div> <!-- slider zona boulevard -->
 
-              <div class="col-sm-6 col-md-6">
+               <div class="col-sm-6 col-md-6">
                   <div class="box">
-                      <div class="box_slider owl-carousel owl-theme ">
-					   	<?php
-						   	$e = 0;
-							$sliders = get_order_group('piso_de_diseno_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	
-                           <div class="item">
-                               <a href="<?php bloginfo('url'); ?>/piso-diseno">
-	                            <?php if($e==1){ ?>
-                                <div class="logo_seccion logo_piso_diseno" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_piso_diseno.svg);"> </div> 
-                                <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('piso_de_diseno_imagen_slider',$slider); ?>);"> </div>              
-                               </a>
-                            </div> <!-- item -->
-                        <?php } ?>
-                       </div><!-- box slider  -->
-                   </div>
-              </div> <!-- piso diseño -->
-
-              <div class="col-sm-6 col-md-6">
-                  <div class="box">
-                         <div class="box_slider owl-carousel owl-theme">
-					   	<?php
-						   	$e = 0;
-							$sliders = get_order_group('travellers_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	
+                        <div class="box_slider owl-carousel owl-theme ">
+              <?php
+                $e = 0;
+              $sliders = get_order_group('boulevard_imagen_slider');
+              foreach($sliders as $slider){  
+                $e++; 
+            ?>  
                               <div class="item">
-                                  <a href="<?php bloginfo('url'); ?>/travellers">                                   
-	                            <?php if($e==1){ ?>
-                                        <div class="logo_seccion logo_travellers" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_travellers_blanco.svg);"> </div>
+                                  <a href="<?php bloginfo('url'); ?>/boulevard">     
+                              <?php if($e==1){ ?>
+                                       <div class="caption">
+                                          <p>&nbsp </p>
+                                           <p>Nuestros<p>
+                                           <h3>Restaurantes</h3>
+                                           <div class="divider"> </div>
+                                       </div>
                                 <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('travellers_imagen_slider',$slider); ?>);"> </div>                       
+                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>                       
                                   </a>
-                               </div>
+                               </div> <!-- item -->
                         <?php } ?>
-                          </div><!-- box slider  -->
-                   </div><!-- travellers -->
-              </div>
+                        </div><!-- box slider  -->
+                 </div>
+              </div>  <!-- piso diseño -->
+
+            <div class="col-sm-6 col-md-6">
+                  <div class="box">
+                        <div class="box_slider owl-carousel owl-theme ">
+              <?php
+                $e = 0;
+              $sliders = get_order_group('boulevard_imagen_slider');
+              foreach($sliders as $slider){  
+                $e++; 
+            ?>  
+                              <div class="item">
+                                  <a href="<?php bloginfo('url'); ?>/boulevard">     
+                              <?php if($e==1){ ?>
+                                       <div class="caption">
+                                          <p>&nbsp </p>
+                                           <h3>Entretencion</h3>
+                                           <div class="divider"> </div>
+                                       </div>
+                                <?php } ?>
+                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>                       
+                                  </a>
+                               </div> <!-- item -->
+                        <?php } ?>
+                        </div><!-- box slider  -->
+                 </div>
+              </div> <!-- final  -->
                 
               <div class="col-sm-12">
                     <!-- NOVEDADES -->
