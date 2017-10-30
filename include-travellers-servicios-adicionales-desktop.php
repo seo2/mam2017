@@ -60,10 +60,13 @@
 			<div class="row">
             	<div class="col-md-6 col-md-push-6">
                  <div class="desc_servicio">
-					      
+
              Cruz Verde<br> <br>
 
-<p>Todos los productos y servicios orientados a cuidar la salud est&aacute;n en Farmacias Cruz Verde, una de las m&aacute;s importantes cadenas de farmacias chilenas. Una variada l&iacute;nea de productos cosm&eacute;ticos completa la oferta. Lo mejor en servicio, con personal capacitado y orientado a atender todas tus necesidades.
+<p>Todos los productos y servicios orientados a cuidar la salud están en Farmacias Cruz Verde,
+  una de las más importantes cadenas de farmacias chilenas. Una variada línea de
+  productos cosméticos completa la oferta. Lo mejor en servicio, con personal
+  capacitado y orientado a atender todas tus necesidades.
 
 Horario. Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
@@ -71,18 +74,20 @@ Horario. Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                 <a href="http://www.cruzverde.cl/" target="_blank" class="url_agencia">www.cruzverde.cl</a>
             	</div>
                </div>
-            
+
 				<div class="col-md-6 col-md-pull-6 ">
                     <div class="desc_servicio">
                      <p>
                       Salco Brand <br><br>
-La m&aacute;s completa farmacia que tiene adem&aacute;s a su disposici&oacute;n de sus clientes la zona de servicios, un lugar que cuenta con sillas de espera, m&aacute;quina de agua purificada y orientaci&oacute;n farmac&eacute;utica.
+La más completa farmacia que tiene además a su disposición de sus clientes
+la zona de servicios, un lugar que cuenta con sillas de espera,
+ máquina de agua purificada y orientación farmacéutica.
 
 Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
 
 
-                       
+
                      </p>
                      <a href="http://www.salcobrand.cl/" target="_blank" class="url_agencia">www.salcobrand.cl</a>
 

@@ -8,11 +8,11 @@ Template name: Home
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
-<?php include('include-search-home.php') ?>  
+<?php include('include-search-home.php') ?>
 	<section class="main_content">
     	<div class="container">
-<?php wp_reset_query(); ?>	
-<?php 
+<?php wp_reset_query(); ?>
+<?php
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "Subscribe here";
@@ -20,20 +20,20 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$tit3 = "HIGHLIGHTS";
 	$btn1 = "View all our stores";
 	$btn2 = "View more";
-}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){
 	$tit1 = "Inscreva-se";
 	$tit2 = "Galeria";
 	$tit3 = "DESTACADOS";
 	$btn1 = "Veja todas as nossas lojas";
 	$btn2 = "Veja mais";
-}else{ 
+}else{
 	$tit1 = "Inscríbete";
 	$tit2 = "Galería";
 	$tit3 = "destacados";
 	$btn1 = "ver todas las tiendas";
 	$btn2 = "ver más";
-} ?>      	
-<?php	                                         
+} ?>
+<?php
     $args = array(
 		'post_type' => array('home')
     );
@@ -41,19 +41,19 @@ if(ICL_LANGUAGE_CODE=='en'){
     $i = 0;
     if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
     	$i++;
-?>	
+?>
         	<div class="row">
              <div class="col-sm-6 col-md-6">
                   <div class="box">
                         <div class="box_slider owl-carousel owl-theme ">
-              <?php
-                $e = 0;
-              $sliders = get_order_group('boulevard_imagen_slider');
-              foreach($sliders as $slider){  
-                $e++; 
-            ?>  
+                            <?php
+                              $e = 0;
+                            $sliders = get_order_group('nuestras_tiendas_imagen_slider');
+                            foreach($sliders as $slider){
+                              $e++;
+                          ?>
                               <div class="item">
-                                  <a href="<?php bloginfo('url'); ?>/boulevard">     
+                                  <a href="<?php bloginfo('url'); ?>/tiendas">
                               <?php if($e==1){ ?>
                                        <div class="caption">
                                           <p>&nbsp </p>
@@ -62,25 +62,25 @@ if(ICL_LANGUAGE_CODE=='en'){
                                            <div class="divider"> </div>
                                        </div>
                                 <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>                       
+                                <div class="box_slide" style="background: url(<?php echo get('nuestras_tiendas_imagen_slider',$slider); ?>);"> </div>
                                   </a>
                                </div> <!-- item -->
                         <?php } ?>
                         </div><!-- box slider  -->
                  </div>
-              </div> 
+              </div> <!-- slider tiendas -->
 
               <div class="col-sm-6 col-md-6">
-                  <div class="box">
-                        <div class="box_slider owl-carousel owl-theme ">
-					   	<?php
-						   	$e = 0;
-							$sliders = get_order_group('boulevard_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>  
+                <div class="box">
+                  <div class="box_slider owl-carousel owl-theme ">
+                    <?php
+                        $e = 0;
+                        $sliders = get_order_group('patio_de_comidas_imagen_slider');
+                        foreach($sliders as $slider){
+                        $e++;
+                    ?>
                               <div class="item">
-                                  <a href="<?php bloginfo('url'); ?>/boulevard">     
+                                  <a href="<?php bloginfo('url'); ?>/patio-de-comidas">
 	                            <?php if($e==1){ ?>
                                        <div class="caption">
                                           <p>&nbsp </p>
@@ -89,67 +89,67 @@ if(ICL_LANGUAGE_CODE=='en'){
                                            <div class="divider"> </div>
                                        </div>
                                 <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>                       
+                                <div class="box_slide" style="background: url(<?php echo get('patio_de_comidas_imagen_slider',$slider); ?>);"> </div>
                                   </a>
                                </div> <!-- item -->
                         <?php } ?>
                         </div><!-- box slider  -->
                  </div>
-              </div> <!-- slider zona boulevard -->
+              </div> <!-- slider patio de comidas -->
 
                <div class="col-sm-6 col-md-6">
                   <div class="box">
-                        <div class="box_slider owl-carousel owl-theme ">
-              <?php
-                $e = 0;
-              $sliders = get_order_group('boulevard_imagen_slider');
-              foreach($sliders as $slider){  
-                $e++; 
-            ?>  
-                              <div class="item">
-                                  <a href="<?php bloginfo('url'); ?>/boulevard">     
-                              <?php if($e==1){ ?>
-                                       <div class="caption">
-                                          <p>&nbsp </p>
-                                           <p>Nuestros<p>
-                                           <h3>Restaurantes</h3>
-                                           <div class="divider"> </div>
-                                       </div>
-                                <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>                       
-                                  </a>
-                               </div> <!-- item -->
-                        <?php } ?>
-                        </div><!-- box slider  -->
+                    <div class="box_slider owl-carousel owl-theme ">
+                            <?php
+                              $e = 0;
+                            $sliders = get_order_group('restaurantes_imagen_slider');
+                            foreach($sliders as $slider){
+                              $e++;
+                          ?>
+                      <div class="item">
+                              <a href="<?php bloginfo('url'); ?>/boulevard">
+                          <?php if($e==1){ ?>
+                                   <div class="caption">
+                                      <p>&nbsp </p>
+                                       <p>Nuestros<p>
+                                       <h3>Restaurantes</h3>
+                                       <div class="divider"> </div>
+                                   </div>
+                            <?php } ?>
+                            <div class="box_slide" style="background: url(<?php echo get('restaurantes_imagen_slider',$slider); ?>);"> </div>
+                              </a>
+                           </div> <!-- item -->
+                    <?php } ?>
+                    </div><!-- box slider  -->
                  </div>
-              </div>  <!-- piso diseño -->
+              </div>  <!-- restaurantes -->
 
             <div class="col-sm-6 col-md-6">
                   <div class="box">
-                        <div class="box_slider owl-carousel owl-theme ">
-              <?php
-                $e = 0;
-              $sliders = get_order_group('boulevard_imagen_slider');
-              foreach($sliders as $slider){  
-                $e++; 
-            ?>  
+                   <div class="box_slider owl-carousel owl-theme ">
+                        <?php
+                          $e = 0;
+                        $sliders = get_order_group('entretencion_imagen_slider');
+                        foreach($sliders as $slider){
+                          $e++;
+                      ?>
                               <div class="item">
-                                  <a href="<?php bloginfo('url'); ?>/boulevard">     
+                                  <a href="<?php bloginfo('url'); ?>/entretencion">
                               <?php if($e==1){ ?>
                                        <div class="caption">
                                           <p>&nbsp </p>
-                                           <h3>Entretencion</h3>
+                                           <h3>Entretención</h3>
                                            <div class="divider"> </div>
                                        </div>
                                 <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('boulevard_imagen_slider',$slider); ?>);"> </div>                       
+                                <div class="box_slide" style="background: url(<?php echo get('entretencion_imagen_slider',$slider); ?>);"> </div>
                                   </a>
                                </div> <!-- item -->
                         <?php } ?>
                         </div><!-- box slider  -->
                  </div>
               </div> <!-- final  -->
-                
+
               <div class="col-sm-12">
                     <!-- NOVEDADES -->
                     <div class="box_horizontal">
@@ -157,26 +157,26 @@ if(ICL_LANGUAGE_CODE=='en'){
 					   	<?php
 						   	$e = 0;
 							$sliders = get_order_group('slider_medio_imagen_desktop');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	
+							foreach($sliders as $slider){
+								$e++;
+						?>
                          <div class="item">
                             <div class="img_slide hidden-xs hidden-sm"  style="background: url(<?php echo get('slider_medio_imagen_desktop',$slider); ?>);"> </div>
                             <!-- 700 x 400px -->
-                            <div class="img_slide visible-xs visible-sm"  style="background: url(<?php echo get('slider_medio_imagen_mobile',$slider); ?>);"> </div> 
-				  			<div class="caption">
-					  			<?php if(get('slider_medio_texto_1',$slider)){ ?>
-                               	<h3><?php echo get('slider_medio_texto_1',$slider); ?></h3>
-                               	<?php } ?>
-					  			<?php if(get('slider_medio_texto_2',$slider)){ ?>
-                               	<h4 class="divider"><?php echo get('slider_medio_texto_2',$slider); ?></h4>
-                               	<?php } ?>
-					  			<?php if(get('slider_medio_texto_3',$slider)){ ?>
-                               	<p><?php echo get('slider_medio_texto_3',$slider); ?></p>
-                               	<?php } ?>
-					  			<?php if(get('slider_medio_link',$slider)){ ?>
-							   	<div class="text-center">
-                               		<a href="<?php echo get('slider_medio_link',$slider); ?>" class="btn btn-default btn_blanco"  role="button"><?php echo $btn2; ?></a>
+                            <div class="img_slide visible-xs visible-sm"  style="background: url(<?php echo get('slider_medio_imagen_mobile',$slider); ?>);"> </div>
+            				  			<div class="caption">
+            					  			<?php if(get('slider_medio_texto_1',$slider)){ ?>
+                                           	<h3><?php echo get('slider_medio_texto_1',$slider); ?></h3>
+                                   	<?php } ?>
+            					  			<?php if(get('slider_medio_texto_2',$slider)){ ?>
+                                           	<h4 class="divider"><?php echo get('slider_medio_texto_2',$slider); ?></h4>
+                                   	<?php } ?>
+            					  			<?php if(get('slider_medio_texto_3',$slider)){ ?>
+                                   	<p><?php echo get('slider_medio_texto_3',$slider); ?></p>
+                                   	<?php } ?>
+            					  			<?php if(get('slider_medio_link',$slider)){ ?>
+            							   	   <div class="text-center">
+                                           		<a href="<?php echo get('slider_medio_link',$slider); ?>" class="btn btn-default btn_blanco"  role="button"><?php echo $btn2; ?></a>
                                	</div>
                                	<?php } ?>
                             </div>
@@ -185,84 +185,69 @@ if(ICL_LANGUAGE_CODE=='en'){
                       </div>
                     </div><!-- box horizontal -->
               </div>
-                
+
             </div> <!-- row -->
             <div class="row">
               <div class="col-sm-6 col-md-6">
-                  <div class="box">
-                        <!-- arauco tag -->
-                        <?php if(get('arauco_tag_imagen')){ ?>
-                        <a href="<?php bloginfo('url'); ?>/arauco-tag" class="box_enlace">
-                          <div class="box_img" style="background: url(<?php echo get('arauco_tag_imagen'); ?>);"> </div>
-                          <div class="caption">
-                              <h3><?php echo $tit1; ?></h3>
-                              <div class="divider"> &nbsp </div>
-                          </div>
-                        </a>
-                        <?php }else{ ?>
-                        <a href="<?php bloginfo('url'); ?>/arauco-tag" class="box_enlace">
-                          <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_arauco_tag.png);"> </div>
-                          <div class="caption">
-                              <h3><?php echo $tit1; ?></h3>
-                              <div class="divider"> &nbsp </div>
-                          </div>
-                        </a>
-                        <?php } ?>
-                 </div> <!-- arauco tag -->
-                      
-                  <div class="box">
-                     <div class="box_slider owl-carousel owl-theme">
-					   	<?php
-						   	$e = 0;
-							$sliders = get_order_group('galerias_imagen_slider');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	
-                           <div class="item">
-                             <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias">
-	                            <?php if($e==1){ ?>
-                                <div class="caption">
-                                    <h3><?php echo $tit2; ?></h3>
-                                    <div class="divider"> &nbsp </div>
-                                </div>
-                                <?php } ?>
-                                <div class="box_slide" style="background: url(<?php echo get('galerias_imagen_slider',$slider); ?>);"> </div>   
-                             </a>
-                           </div>
-                        <?php } ?>
-                       </div><!-- box slider  -->
-                </div> <!-- galeria -->
+                    <div class="box">
+                       <div class="box_slider owl-carousel owl-theme">
+                      <?php
+                        $e = 0;
+                        $sliders = get_order_group('galerias_imagen_slider');
+                        foreach($sliders as $slider){
+                        $e++;
+                      ?>
+                             <div class="item">
+                               <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias">
+                                <?php if($e==1){ ?>
+                                  <div class="caption">
+                                      <h3><?php echo $tit2; ?></h3>
+                                      <div class="divider"> &nbsp </div>
+                                  </div>
+                                  <?php } ?>
+                                  <div class="box_slide" style="background: url(<?php echo get('galerias_imagen_slider',$slider); ?>);"> </div>
+                               </a>
+                             </div>
+                          <?php } ?>
+                         </div><!-- box slider  -->
+                  </div> <!-- galeria -->
+
+
+
               </div>
               <div class="col-sm-6 col-md-6">
-                <div class="image_dynamic">
-                   <!--  <div class="lente"></div> -->
-                   <!-- SLIDER DESTACADO HOME -->
-                   <div class="slider_destacado_home owl-carousel owl-theme box">
-					   	<?php
-						   	$e = 0;
-							$sliders = get_order_group('destacado_grande_imagen');
-							foreach($sliders as $slider){  
-								$e++; 
-						?>    	
-                      <div class="item">
-                         <!--  <div class="image_dynamic_portada" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tendencias.gif);"> </div> -->
-                          <img class="img-responsive" src="<?php echo get('destacado_grande_imagen',$slider); ?>" alt="">
-                          <?php 
-	                          if(get('destacado_grande_link',$slider)){
-                          ?>
-                            <a href="<?php echo get('destacado_grande_link',$slider); ?>" class="btn btn-default btn_rojo2"  role="button">ver más</a>
-                          <?php } ?>
-                      </div>
+
+                  <div class="box">
+                   <div class="box_slider owl-carousel owl-theme ">
+                        <?php
+                          $e = 0;
+                        $sliders = get_order_group('shows_fin_de_semana_imagen_slider');
+                        foreach($sliders as $slider){
+                          $e++;
+                      ?>
+                              <div class="item">
+                                  <a href="<?php bloginfo('url'); ?>/entretencion">
+                              <?php if($e==1){ ?>
+                                       <div class="caption">
+                                          <p>nuestros shows de </p>
+                                           <h3>Fin de semana</h3>
+                                           <div class="divider"> </div>
+                                       </div>
+                                <?php } ?>
+                                <div class="box_slide" style="background: url(<?php echo get('shows_fin_de_semana_imagen_slider',$slider); ?>);"> </div>
+                                  </a>
+                               </div> <!-- item -->
                         <?php } ?>
-                   </div>
-                   <!--  <div class="caption_revista" >
-                      <div class="logo_revista" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_revista_detalle.svg);"> </div>
-                        <p>Suscríbete y podrás estar al día de todas las tendencias.
-                            <a href="http://www.revistadetalle.cl/" target="_blank"  class="btn btn-default btn_revista hvr-float" role="button">revista detalle</a>
-					             </p>
-                    </div> --> <!-- caption revista -->
+                        </div><!-- box slider  -->
                  </div>
-              </div> <!-- revista detalle -->
+
+
+                <div class="hidden">
+                    <?php include('section-destacado-home.php')  ?>
+                </div>
+
+
+              </div> <!-- sm6 -->
       </div> <!-- row -->
 <?php endwhile; else: ?>
 <?php endif; ?>
