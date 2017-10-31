@@ -13,7 +13,7 @@ Template name: Boulevard Tiendas
       <div class="container">
           <div class="row">
               <section class="tiendas">
-                  <h4 class="divider">boulevard</h4>
+                  <h4 class="divider">Restaurantes</h4>
                    <a href="boulevard.php" class="back">< <?php echo $back; ?></a>
                       <div class="grid_tiendas center-block">
                           <div class="container">
