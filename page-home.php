@@ -107,7 +107,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                               $e++;
                           ?>
                       <div class="item">
-                              <a href="<?php bloginfo('url'); ?>/boulevard">
+                              <a href="<?php bloginfo('url'); ?>/restaurantes">
                           <?php if($e==1){ ?>
                                    <div class="caption">
                                       <p>&nbsp </p>
