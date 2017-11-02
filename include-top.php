@@ -42,12 +42,12 @@ if(ICL_LANGUAGE_CODE=='en'){
     $menu2 = "distrito de lujo";
     $menu3 = "patio de comidas";
     $menu4 = "Restaurantes";
-    $menu5 = "entretención";
-    $menu6 = "novedades";
+    $menu5 = "novedades";
+    $menu6 = "entretención";
     $menu7 = "tiendas";
-	$menu8 = "galería";
-    $menu9 = "destacado de la semana";
-    $menu10 = "servicio al cliente";
+	$menu8 = "novedades";
+    $menu9 = "galeria";
+    $menu10 = "servicios al cliente";
     $menu11 = "travellers";
     
 	$tit1 = "horarios";
@@ -140,8 +140,8 @@ if(ICL_LANGUAGE_CODE=='en'){
                                       <li><a id="btn_tiendas"     href="<?php bloginfo('url'); ?>/tiendas#tiendas"><?php echo $menu7; ?></a></li>
                                      <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/boulevard#boulevard"><?php echo $menu3; ?></a></li>
                                      <li><a id="btn_piso" 			href="<?php bloginfo('url'); ?>/piso-diseno"><?php echo $menu4; ?></a></li>
-                                     <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novedades#entretencion"><?php echo $menu5; ?></a></li>
-                                     <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu6; ?></a></li>
+                                     <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novedades#entretencion"><?php echo $menu6; ?></a></li>
+                                     <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu5; ?></a></li>
                                     
                                     <?php } ?>
                                 </ul>
@@ -154,9 +154,9 @@ if(ICL_LANGUAGE_CODE=='en'){
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
-                                       <li><a href="<?php bloginfo('url'); ?>/novedades-galeria/#galerias"><?php echo $menu8; ?></a></li>
+                                       <!-- <li><a href="<?php bloginfo('url'); ?>/novedades-galeria/#galerias"><?php echo $menu8; ?></a></li> -->
 <!--                                        <li><a href="http://www.revistadetalle.cl/" target="_blank"><?php echo $menu9; ?></a></li> -->
-                                      <li><a href="<?php bloginfo('url'); ?>/arauco-tag"><?php echo $menu9; ?></a></li>
+                                      <li><a href="<?php bloginfo('url'); ?>/novedades-galeria/#galerias"><?php echo $menu9; ?></a></li>
                                        <li><a href="<?php bloginfo('url'); ?>/servicio-al-cliente"><?php echo $menu10; ?></a></li>
                                        <!-- <li><a href="<?php bloginfo('url'); ?>/travellers"><?php echo $menu11; ?></a></li> -->
                                   </ul>

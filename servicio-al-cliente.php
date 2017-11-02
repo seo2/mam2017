@@ -132,7 +132,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                 </div> <!-- content como llegar -->
          
 					<div class="col-sm-6 col-md-6">
-						<div class="box">
+						<!-- <div class="box">
 							<div class="box_slider owl-carousel owl-theme">
 								<div class="item">
 									<a href="<?php bloginfo('url'); ?>/travellers/">
@@ -140,8 +140,8 @@ if(ICL_LANGUAGE_CODE=='en'){
 										<div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_travellers.png);"> </div>                             
 									</a>
 								</div>
-							</div><!-- box slider  -->
-						</div> <!-- galeria -->
+							</div> --><!-- box slider 
+						</div>  --><!-- galeria -->
 					</div>
 				</section>
 			</div> <!-- row -->
