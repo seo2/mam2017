@@ -63,7 +63,7 @@
                                       </li>
 
                                       <li>
-                                        <a href="https://www.google.es/maps/place/Mall+Arauco+Maip%C3%BA/@-33.4820402,-70.7532191,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c317be21263f:0xdb6d81fc6e90e4e5!8m2!3d-33.4820447!4d-70.7510304 target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tit2; ?> </a>
+                                        <a href="https://www.google.es/maps/place/Mall+Arauco+Maip%C3%BA/@-33.4820402,-70.7532191,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c317be21263f:0xdb6d81fc6e90e4e5!8m2!3d-33.4820447!4d-70.7510304" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tit2; ?> </a>
                                       </li>
                                     </ul>
                               </div>
@@ -111,11 +111,13 @@
 			<div class="logo">
                 <a href="<?php bloginfo('url'); ?>"> parque arauco</a>
            	</div> <!-- brand -->
+<!--
             <div id="lang_switcher" class="visible-xs visible-sm">
             	<select name="language" class="selectpicker show-menu-arrow" id="language"> 
 					<?php icl_post_languages_mobile(); ?>
                 </select>
             </div>
+-->
             <a class="close_tienda" href="javascript:void(0);" data-id=""></a>
        </div>
     </div>

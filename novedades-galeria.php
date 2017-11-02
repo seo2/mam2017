@@ -57,7 +57,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 					}
 				?>
 	          </div>
-	            <section class="galeria_videos ">
+	            <section class="galeria_videos hide">
 	              <h4 class="divider">videos</h4>
 	                <div class="container">
 	                  <div class="row">
@@ -95,7 +95,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	                </div> <!-- container-videos -->
 	
 	            </section>
-	            <div class="box_ver_mas_tiendas text-center">
+	            <div class="box_ver_mas_tiendas text-center hide">
 	             <a href="https://www.youtube.com/channel/UC9ZtYWgO0_Fz7Fm7A3loI8A" target="_blank" class="btn btn-default btn_ver_mas hvr-float">
 	                <h3 class="ver_mas">ver más videos</h3>
 	                <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
@@ -109,8 +109,8 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$rowcount 	 = 0;
 
 	$args = array(
-		'post_type' 	=> 'galeria',
-		'posts_per_page'=> -1,
+		'post_type' 		=> 'galeria',
+		'posts_per_page'	=> -1,
 		'category_name'		=> 'novedades'
 	);
 
@@ -140,7 +140,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 
 <script>
 <?php if($paginas<=1){ ?>
-	$('.box_ver_mas_tiendas2').hide();
+	$('.box_ver_mas_tiendas').hide();
 <?php } ?>	
 	
 	
@@ -155,7 +155,7 @@ $('#pages a').each(function(index) {
 
 
 
-$('.box_ver_mas_tiendas2').on('click', function(){
+$('.box_ver_mas_tiendas').on('click', function(){
   	loaded[pages[current+1]] = loaded[pages[current+1]] + 1; 
     if(loaded[pages[current+1]] <= 1){
          loadMoreContent(current+1);
@@ -174,7 +174,7 @@ function loadMoreContent(position) {
 			        if(position +1 < pages.length) {
 					
 					}else{
-					 	$('.box_ver_mas_tiendas2').hide();
+					 	$('.box_ver_mas_tiendas').hide();
 					}
 			    });
 	    	});

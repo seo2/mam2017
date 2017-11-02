@@ -102,7 +102,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                      <div class="box">
                            <div class="box_slider owl-carousel owl-theme ">
                                  <div class="item">
-                                     <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">
+                                     <a href="http://www.cinehoyts.cl/cartelera/santiago-poniente-y-norte/maipu" target="_blank">
                                           <div class="caption">
                                              <p>&nbsp </p>
                                               <h3><?php echo $tit1; ?> </h3>

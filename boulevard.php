@@ -74,7 +74,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                                 <div class="desc_destacado visible-xs">
                                                     <h3>¡Descubre los mejores estrenos!</h3>
                                                     <p>Si eres amante del cine, entra aquí y conoce las últimas novedades en la cartelera de Hoyts Parque Arauco.</p>
-                                                    <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">www.cinehoyts.cl</a>
+                                                    <a href="http://www.cinehoyts.cl/cartelera/santiago-poniente-y-norte/maipu" target="_blank">www.cinehoyts.cl</a>
                                                 </div>
                                             </div> <!-- box logo tienda -->
                                         </div> <!--  tienda -->

@@ -471,300 +471,88 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 
     <div id="content_telefonia" class="content_servicio collapse">
         <div id="content_telefoniaancla" class="anclita"></div>
-        <div class="container">
-            <h4 class="divider verde">Telefonía</h4>
-            <div class="close_servicio" data-target="#serv6"> </div>
-
-        </div>
-              <div class="row">
-                <?php if(ICL_LANGUAGE_CODE=='en'){ ?>
-                        <div class="col-md-4">
-                               <div class="box_agencia">
-                                     <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
-                                     </div>
-                                     <div class="desc_servicio text-center">
-                                     <p> Mondays to Fridays  <br>
-                                     from 9am to 2pm   <br>
-                                          </p>
-                                          <p class="tel">Telephone: +56226638365 </p>
-
-                                           <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
-                                      </div>
-
-                               </div>
-                         </div>
-                         <div class="col-md-4">
-                         <div class="box_agencia">
-                               <div class="head_agencia">
-                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
-                               </div>
-                               <div class="desc_servicio text-center">
-                                    <p> Mondays to Fridays  <br>
-                                     from 9am to 2pm   <br>
-                                          </p>
-                                          <p class="tel"> Telephone: +56232054249 </p>
-                                           <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
-                               </div>
+        	<div class="container">
+            	<h4 class="divider verde">Telefonía</h4>
+				<div class="close_servicio" data-target="#serv6"> </div>
+			</div>
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="box_agencia">
+                             <div class="head_agencia">
+                               <img src="<?php bloginfo('template_url'); ?>/assets/img/claro.png">
                              </div>
-                         </div>
-                <?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
-                        <div class="col-md-4">
-                               <div class="box_agencia">
-                                     <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
-                                     </div>
-                                     <div class="desc_servicio text-center">
-                                     <p> Segunda a Sexta <br>
-                                     das 09:00h às 14:00h<br>
-                                          </p>
-                                          <p class="tel">Tel.: +56226638365 </p>
+                             <div class="desc_servicio text-center">
+                             <p> Los módulos de venta Claro ofrecen una gran variedad de productos y servicios de telefonía celular: planes mixtos, planes cuenta exacta y prepagos con modernos equipos móviles. Y tú, ¿ya tienes un Smartphone?
+                                  </p>
+                                  <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
 
-                                           <a href="http://www.bbva.cl/" target="_blank" class="url_agencia">www.bbva.cl</a>
-                                      </div>
+                                   <a href="http://www.clarochile.cl/" target="_blank" class="url_agencia">www.clarochile.cl</a>
+                              </div>
 
-                               </div>
-                         </div>
-                         <div class="col-md-4">
-                         <div class="box_agencia">
-                               <div class="head_agencia">
-                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
-                               </div>
-                               <div class="desc_servicio text-center">
-                                   <p> Segunda a Sexta <br>
-                                     das 09:00h às 14:00h <br>
-                                          </p>
-                                          <p class="tel"> Tel.: +56232054249 </p>
-                                           <a href="http://www.santander.cl/" target="_blank" class="url_agencia">www.santander.cl</a>
-                               </div>
+                       </div>
+                 </div>
+				<div class="col-md-4">
+                 <div class="box_agencia">
+                       <div class="head_agencia">
+                         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_entel.png" height="40">
+                       </div>
+                       <div class="desc_servicio text-center">
+                           <p> Módulo de venta de planes, kit de prepago y tarjetas telefónicas. ¡Lo último en telefonía móvil al alcance de todos!
+                             <br>
+                                  </p>
+                                  <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+                                   <a href="http://www.entel.cl/" target="_blank" class="url_agencia">www.entel.cl</a>
+                       </div>
+                     </div>
+                </div>
+                <div class="col-md-4">
+                       <div class="box_agencia">
+                             <div class="head_agencia">
+                               <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_movistar.jpg">
                              </div>
-                         </div>
-                <?php }else{  ?>
-                        <div class="col-md-4">
-                               <div class="box_agencia">
-                                     <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/claro.png">
-                                     </div>
-                                     <div class="desc_servicio text-center">
-                                     <p> Los módulos de venta Claro ofrecen una gran variedad de productos y servicios de telefonía celular: planes mixtos, planes cuenta exacta y prepagos con modernos equipos móviles. Y tú, ¿ya tienes un Smartphone?
-                                          </p>
-                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+                             <div class="desc_servicio text-center">
+                             <p> Encuentra aquí todos los servicios Movistar: contratación de planes y productos, pago de cuentas, servicio al cliente, entre otros.
+                                  </p>
+                                  <p class="tel">Horario de atención: de lunes a viernes de 10:00 a 21:00 hrs., sábado de 10:00 a 14:00. Domingo y festivos cerrado.</p>
 
-                                           <a href="http://www.clarochile.cl/" target="_blank" class="url_agencia">www.clarochile.cl</a>
-                                      </div>
+                                   <a href="http://www.movistar.cl/" target="_blank" class="url_agencia">www.movistar.cl</a>
+                              </div>
 
-                               </div>
-                         </div>
-                         <div class="col-md-4">
-                         <div class="box_agencia">
-                               <div class="head_agencia">
-                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_entel.png" height="40">
-                               </div>
-                               <div class="desc_servicio text-center">
-                                   <p> Módulo de venta de planes, kit de prepago y tarjetas telefónicas. ¡Lo último en telefonía móvil al alcance de todos!
-                                     <br>
-                                          </p>
-                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
-                                           <a href="http://www.entel.cl/" target="_blank" class="url_agencia">www.entel.cl</a>
-                               </div>
+                       </div>
+                 </div>
+                <div class="clearfix"></div>
+                <div class="col-md-4">
+                    <div class="box_agencia">
+                    	<div class="head_agencia">
+                        	<img src="<?php bloginfo('template_url'); ?>/assets/img/vtr.png" >
+                        </div>
+                        <div class="desc_servicio text-center">
+                        	<p> VTR ofrece en su tienda de Arauco Maipú servicios como recepción de pagos de los distintos servicios de la empresa y atención a clientes en televisión por cable, telefonía e internet. Encuentra solución a tus requerimientos en la mayor comodidad del mal.
+                            </p>
+                            <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
+							<a href="http://www.vtr.cl/" target="_blank" class="url_agencia">www.vtr.cl</a>
+                        </div>
+                    </div>
+            	</div>
+				<div class="col-md-4">
+                       <div class="box_agencia">
+                             <div class="head_agencia">
+                               <img src="<?php bloginfo('template_url'); ?>/assets/img/wom.png" >
                              </div>
-                         </div>
+                             <div class="desc_servicio text-center">
+                             <p> WOM ofrece un servicio de excelencia, data de alta calidad y a un precio justo, gracias al despliegue de nuestra red propia con cobertura nacional. Podrás encontrar en este módulo el equipo que andas buscando. ¡Te esperamos!
 
-                             <div class="col-md-4">
-                               <div class="box_agencia">
-                                     <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_movistar.jpg" ">
-                                     </div>
-                                     <div class="desc_servicio text-center">
-                                     <p> Encuentra aquí todos los servicios Movistar: contratación de planes y productos, pago de cuentas, servicio al cliente, entre otros.
-                                          </p>
-                                          <p class="tel">Horario de atención: de lunes a viernes de 10:00 a 21:00 hrs., sábado de 10:00 a 14:00. Domingo y festivos cerrado.</p>
+                                  </p>
+                                  <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
 
-                                           <a href="http://www.movistar.cl/" target="_blank" class="url_agencia">www.movistar.cl</a>
-                                      </div>
+                                   <a href="http://www.wom.cl/" target="_blank" class="url_agencia">www.wom.cl</a>
+                              </div>
 
-                               </div>
-                         </div>
-
-                           <div class="col-md-4">
-                               <div class="box_agencia">
-                                     <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/vtr.png" >
-                                     </div>
-                                     <div class="desc_servicio text-center">
-                                     <p> VTR ofrece en su tienda de Arauco Maipú servicios como recepción de pagos de los distintos servicios de la empresa y atención a clientes en televisión por cable, telefonía e internet. Encuentra solución a tus requerimientos en la mayor comodidad del mal.
-                                          </p>
-                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
-
-                                           <a href="http://www.vtr.cl/" target="_blank" class="url_agencia">www.vtr.cl</a>
-                                      </div>
-
-                               </div>
-                         </div>
-
-
-                                 <div class="col-md-4">
-                               <div class="box_agencia">
-                                     <div class="head_agencia">
-                                       <img src="<?php bloginfo('template_url'); ?>/assets/img/wom.png" >
-                                     </div>
-                                     <div class="desc_servicio text-center">
-                                     <p> WOM ofrece un servicio de excelencia, data de alta calidad y a un precio justo, gracias al despliegue de nuestra red propia con cobertura nacional. Podrás encontrar en este módulo el equipo que andas buscando. ¡Te esperamos!
-
-                                          </p>
-                                          <p class="tel">Horario de atención: Lunes a domingos y festivos, de 10:30 a 21:30 hrs.</p>
-
-                                           <a href="http://www.wom.cl/" target="_blank" class="url_agencia">www.wom.cl</a>
-                                      </div>
-
-                               </div>
-                         </div>
-                <?php } ?>
-              </div> <!-- row -->
-    </div>
-
-
-        <!--
-          <div id="content_chip" class="content_servicio collapse">
-           <div class="container">
-              <h4 class="divider verde_oscuro">Tarjeta Arauco chip</h4>
-               <div class="close_servicio"> </div>
-                  <div class="row">
-                      <div class="col-md-12">
-                          <div class="desc_servicio">
-                                 <p>Arauco Pass y Arauco Chip son tarjetas que permiten prepagar los estacionamientos y así evitar
-                                 pasar por cajeros cuando termines de realizar tus compras. ¿Qué cómodo, no te parece?</p>
-
-                                 <section class="box_faq">
-
-                                               <div class="col-sm-12">
-                                                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                                     <div class="panel panel-default">
-                                                       <div class="panel-heading" role="tab" id="">
-
-                                                             <h4>
-                                                               <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q1" aria-expanded="true" aria-controls="q1">
-                                                                   ¿DÓNDE OBTENERLA?
-                                                               </a>
-                                                             </h4>
-                                                       </div>
-                                                       <div id="q1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                                         <div class="panel-body">
-                                                              <p>Acercándose a los cajeros manuales de Central Parking, ubicado
-                                                                  en el Acceso París y costado Clínica Arauco Salud nivel -1.</p>
-
-                                                         </div>
-                                                       </div>
-                                                     </div>
-                                                     <div class="panel panel-default">
-                                                       <div class="panel-heading" role="tab" id="">
-
-                                                         <h4 class="panel-title">
-                                                           <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q2" aria-expanded="false" aria-controls="q2">
-                                                             ¿CUÁNTO VALE?
-                                                           </a>
-                                                         </h4>
-                                                       </div>
-                                                       <div id="q2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                                         <div class="panel-body">
-                                                           <p>La tarjeta Arauco Chip tiene un valor de $3.000, monto que quedará disponible para el pago
-                                                                de estacionamiento. Una vez consumido el saldo, el monto mínimo de recarga es de $1.000</p>
-                                                         </div>
-                                                       </div>
-                                                     </div>
-                                                     <div class="panel panel-default">
-                                                       <div class="panel-heading" role="tab" id="">
-
-                                                         <h4 class="panel-title">
-                                                           <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q3" aria-expanded="false" aria-controls="q3">
-                                                             ¿Cuándo se activa la tarjeta?
-                                                           </a>
-                                                         </h4>
-                                                       </div>
-                                                       <div id="q3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                                         <div class="panel-body">
-                                                         <p>Las tarjetas se activarán al momento de la entrega y una vez cargadas con el monto mínimo.
-                                                              Si la tarjeta no fuera cargada por un período de un año, quedará desactivada impidiendo
-                                                            la posibilidad de uso.</p>
-                                                         </div>
-                                                       </div>
-                                                     </div>
-
-                                                     <div class="panel panel-default">
-                                                       <div class="panel-heading" role="tab" id="">
-
-                                                         <h4 class="panel-title">
-                                                           <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q4" aria-expanded="false" aria-controls="q3">
-                                                             ¿CÓMO FUNCIONAN?
-                                                           </a>
-                                                         </h4>
-                                                       </div>
-                                                       <div id="q4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                                         <div class="panel-body">
-                                                             <h3> Arauco Chip</h3>
-                                                             <ol>
-                                                               <li>Acercar tarjeta a gabinete donde aparece la figura de una tarjeta, una vez que se encienda la
-                                                              luz anaranjada en este. NO SACAR TICKET.</li>
-                                                               <li> Al término de su visita, presentar nuevamente la tarjeta en la figura en gabinete de barrera de
-                                                              salida de los estacionamientos.</li>
-                                                               <li>Se descontará y mostrará el saldo de su tarjeta al momento de retirarla
-                                                              y luego se abrirá la barrera.</li>
-                                                             </ol>
-                                                         </div>
-                                                       </div>
-                                                     </div>
-
-                                                     <div class="panel panel-default">
-                                                       <div class="panel-heading" role="tab" id="">
-
-                                                         <h4 class="panel-title">
-                                                           <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q5" aria-expanded="false" aria-controls="q3">
-                                                             ¿CÓMO SE CARGAN?
-                                                           </a>
-                                                         </h4>
-                                                       </div>
-                                                       <div id="q5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                                         <div class="panel-body">
-                                                            <p>La carga mínima de Arauco Chip es de $3.000, se puede realizar en cualquiera de los 57
-                                                                cajeros automáticos de estacionamientos ubicados dentro y fuera del mall o en los dos cajeros
-                                                                manuales ubicados en el acceso a París y costado Clínica Arauco Salud nivel -1.</p>
-
-                                                            <p>La carga de la tarjeta tiene duración indefinida y es de responsabilidad del usuario conservarla en
-                                                            un lugar seguro para evitar la pérdida y en consecuencia el saldo asociado a esta.
-                                                            Por tu seguridad la tarjeta no debe quedar al interior de tu automóvil cuando utilices
-                                                            los estacionamientos de Parque Arauco.</p>
-                                                         </div>
-                                                       </div>
-                                                     </div>
-
-                                                     <div class="panel panel-default">
-                                                       <div class="panel-heading" role="tab" id="">
-
-                                                         <h4 class="panel-title">
-                                                           <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q6" aria-expanded="false" aria-controls="q3">
-                                                             ¿Qué hacer en caso de pérdida de la tarjeta?
-                                                           </a>
-                                                         </h4>
-                                                       </div>
-                                                       <div id="q6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                                         <div class="panel-body">
-                                                            <p>En caso de pérdida dirigirse a la oficina central de Central Parking, ubicado al costado de la
-                                                                Clínica Arauco Salud nivel -1. Debes dar el código de la tarjeta -ubicado en el costado superior
-                                                                derecho de esta- para que se te asigne una tarjeta nueva con un nuevo código y realizar el
-                                                                traspaso del saldo en caso que así se requiera..</p>
-                                                         </div>
-                                                       </div>
-                                                     </div>
-                                                   </div>
-                                               </div>
-                                 </section>
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div> end content arauco chip -->
-  </div>
+                       </div>
+                 </div>
+            </div> <!-- row -->
+		</div>
+	</div>
 </div>
 
 

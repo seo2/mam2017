@@ -78,22 +78,25 @@ if(ICL_LANGUAGE_CODE=='en'){
                  <span class="icon-bar bottom_bar"></span>
                </button>
                   <div class="logo">
-                    <a href="<?php bloginfo('url'); ?>"> parque arauco</a>
+                    <a href="<?php bloginfo('url'); ?>"> Arauco Maipú</a>
                   </div> <!-- brand -->
 
+<!--
                     <div id="lang_switcher" class="visible-xs visible-sm">
                        <select name="language" class="selectpicker show-menu-arrow"> 
                             <option selected="" value="/esp/">ESP</option>
                             <option value="/eng/">ENG</option>
                              <option value="/por/">POR</option>
-                      </select>
-                         
-                      </div>            
+                      </select>     
+                    </div>     
+-->       
+<!--
                   <div class="lang ">
                     <ul class="hidden-xs hidden-sm">
 						<?php icl_post_languages(); ?>
                     </ul>
-                   </div>  
+                   </div> 
+--> 
                    
                 <div class="rrss hidden-xs hidden-sm">
                    <ul>
