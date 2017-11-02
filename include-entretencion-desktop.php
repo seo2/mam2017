@@ -52,18 +52,6 @@
                         	<div class="img_servicio" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
                         </div>
                     </div><!--  slider_entretenion -->
-                    <?php if($post->ID == 431){ ?>
-                    <div class="box_cartelera clearfix">
-                    	<div class="row">
-                        	<div class="col-xs-8">
-                            	<a href="http://www.centromori.cl/" target="_blank">ver cartelera y precios</a>
-                            </div>
-                            <div class="col-xs-4">
-                            	<img src="<?php bloginfo('template_url'); ?>/assets/img/logo_mori.png" alt="" class="img-responsive pull-right">
-                            </div> 
-                        </div>    
-                    </div>
-                    <?php } ?>
                 </div>
                 <div class="col-md-6 col-md-pull-6 ">
                     <div class="desc_servicio desc_entretencion">
