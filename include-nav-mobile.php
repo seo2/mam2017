@@ -2,7 +2,7 @@
     <!--   <a class="navmenu-brand" href="#">Project name</a> -->
 
         <div class="logo text-center">
-                <a href="<?php bloginfo('url'); ?>"> parque arauco</a>
+                <a href="<?php bloginfo('url'); ?>"> arauco Maipú</a>
         </div> <!-- brand -->
 
     <div class="rrss visible-xs visible-sm center-block text-center">
@@ -26,19 +26,22 @@
                 <div class="row">
                   <ul class="nav navbar-nav lista_menu">
                       <li class="active"><a href="<?php bloginfo('url'); ?>">Home</a></li>
+                       <li><a id="btn_tiendas"    href="<?php bloginfo('url'); ?>/tiendas#tiendas"><?php echo $menu7; ?></a></li>
                      <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-lujo"><?php echo $menu2; ?></a></li>
-                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/boulevard#boulevard"><?php echo $menu3; ?></a></li>
-                     <li><a id="btn_piso" 			href="<?php bloginfo('url'); ?>/piso-diseno"><?php echo $menu4; ?></a></li>
+                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/restaurantes#restaurantes"><?php echo $menu3; ?></a></li>
+                     <li><a id="btn_novedades"    href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu6; ?></a></li>
+                     
                      <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novedades#entretencion"><?php echo $menu5; ?></a></li>
-                     <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu6; ?></a></li>
-                     <li><a id="btn_tiendas" 		href="<?php bloginfo('url'); ?>/tiendas#tiendas"><?php echo $menu7; ?></a></li>
+                     <li><a id="btn_piso"       href="<?php bloginfo('url'); ?>/galeria"><?php echo $menu4; ?></a></li>
+                     
+                    
                    </ul>
                     <div class="divisor_h text-center"></div>
                      <ul class="nav navbar-nav lista_menu">
-                       <li><a href="<?php bloginfo('url'); ?>/arauco-tag"><?php echo $menu8; ?></a></li>
+                       <li><a href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu8; ?></a></li>
 <!--                        <li><a href="http://www.revistadetalle.cl/" target="_blank"><?php echo $menu9; ?></a></li> -->
                        <li><a href="<?php bloginfo('url'); ?>/servicio-al-cliente"><?php echo $menu10; ?></a></li>
-                       <li><a href="<?php bloginfo('url'); ?>/travellers"><?php echo $menu11; ?></a></li>
+                     <!--   <li><a href="<?php bloginfo('url'); ?>/travellers"><?php echo $menu11; ?></a></li> -->
                    </ul>
                    
                    <div class="divisor_h text-center"></div>
@@ -60,7 +63,7 @@
                                       </li>
 
                                       <li>
-                                        <a href="https://www.google.es/maps/place/Parque+Arauco/@-33.4019089,-70.5798102,18z/data=!4m13!1m7!3m6!1s0x9662cf4657be4221:0xedf29683ef50290a!2sAv+Presidente+Kennedy,+Regi%C3%B3n+Metropolitana,+Chile!3b1!8m2!3d-33.3977769!4d-70.5709762!3m4!1s0x9662cf26243dcc31:0xc9aacb64a9fec91!8m2!3d-33.4018773!4d-70.5792048" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tit2; ?> </a>
+                                        <a href="https://www.google.es/maps/place/Mall+Arauco+Maip%C3%BA/@-33.4820402,-70.7532191,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c317be21263f:0xdb6d81fc6e90e4e5!8m2!3d-33.4820447!4d-70.7510304 target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tit2; ?> </a>
                                       </li>
                                     </ul>
                               </div>
