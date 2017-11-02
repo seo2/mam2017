@@ -59,9 +59,10 @@
 			<div class="close_servicio" data-target="#serv1"></div>
 			<div class="row">
             	<div class="col-md-6 col-md-push-6">
+                        <div class="head_agencia">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cruzverde.jpg" alt="" width="70" height="45">
+                        </div>
                  <div class="desc_servicio">
-
-             Cruz Verde<br> <br>
 
 <p>Todos los productos y servicios orientados a cuidar la salud están en Farmacias Cruz Verde,
   una de las más importantes cadenas de farmacias chilenas. Una variada línea de
@@ -76,9 +77,11 @@ Horario. Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                </div>
 
 				<div class="col-md-6 col-md-pull-6 ">
+                    <div class="head_agencia">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/salcobrand.jpg" alt="" width="70" height="45">
+                    </div>
                     <div class="desc_servicio">
                      <p>
-                      Salco Brand <br><br>
 La más completa farmacia que tiene además a su disposición de sus clientes
 la zona de servicios, un lugar que cuenta con sillas de espera,
  máquina de agua purificada y orientación farmacéutica.
@@ -137,81 +140,7 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
 			<h4 class="divider naranja"><?php echo $serv3; ?></h4>
 			<div class="close_servicio" data-target="#serv3"> </div>
             <div class="row">
-				<?php if(ICL_LANGUAGE_CODE=='en'){ ?>
-                <div class="col-md-4">
-					<div class="box_agencia">
-                        <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
-                        </div>
-                        <div class="desc_servicio text-center">
-                            <p>It offers culture, entertainment and recreation through safe, secure and quality tourist services that flexibly show the most relevant tourist attractions in Santiago and its surroundings.</p>
-                            <p>Telephone: +56228201000 </p>
-                            <p>Currency type: Dollar, Brazilian Reais, Argentinian Pesos, Euros and others.</p>
-                            <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                   <div class="box_agencia">
-                      <div class="head_agencia">
-                       <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
-                      </div>
-                      <div class="desc_servicio text-center">
-                        <p>Dream vacations are easier than ever in our Lan Tam store where you can buy and reserve your tickets and tourist packages, and get information about promotions, discounts and benefits…everything at the same place!</p>
-                        <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box_agencia">
-                          <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
-                          </div>
-                          <div class="desc_servicio text-center">
-                          <p>When it comes to travels, Cocha is the expert.  With more than 60 years of experience, this agency is dedicated to travel sales considering tickets, stays and tours all over the world, with professional advice to guarantee that everything works properly in an unforgettable trip.</p>
-                          <p>Vacations? Now!</p>
-                          <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
-                          </div>
-                    </div>
-                </div>
-				<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
-                <div class="col-md-4">
-					<div class="box_agencia">
-                        <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
-                        </div>
-                        <div class="desc_servicio text-center">
-                            <p>Oferece cultura e diversão através de serviços turísticos seguros, confiáveis e de alta qualidade que, de forma flexível, mostram os atrativos turísticos de Santiago e seus entornos</p>
-                            <p>Tel.: +56228201000 </p>
-                            <p>Tipo de moeda: Dólar, Reais Brasileiros, Pesos Argentinos, Euros e outras.</p>
-                            <a href="http://www.turistik.cl/" target="_blank" class="url_agencia">www.turistik.cl</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                   <div class="box_agencia">
-                      <div class="head_agencia">
-                       <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
-                      </div>
-                      <div class="desc_servicio text-center">
-                        <p>As férias sonhadas nunca foram mais simples de obter na nossa loja LATAM, onde é possível comprar e reservar suas passagens e pacotes turísticos, obter informações de promoções, descontos e benefícios. Tudo no mesmo lugar.</p>
-                        <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box_agencia">
-                          <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
-                          </div>
-                          <div class="desc_servicio text-center">
-                          <p>Quando se trata de viagens, Cocha é o expert. Acima de 60 anos de experiência, esta agencia está dedicada a venda de viagens que consideram passagens, estadias e tours por todo o mundo, com assessoramento profissional para que nada falte numa viagem inesquecível.</p>
-                          <p>Férias? Agora!</p>
-                          <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
-                          </div>
-                    </div>
-                </div>
-				<?php }else{  ?>
+
                 <div class="col-md-4">
 					<div class="box_agencia">
                         <div class="head_agencia">
@@ -226,35 +155,6 @@ Horario Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
                         </div>
                     </div>
                 </div>
-            <!--     <div class="col-md-4">
-                   <div class="box_agencia">
-                      <div class="head_agencia">
-                       <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
-                      </div>
-                      <div class="desc_servicio text-center">
-                        <p> Las vacaciones soñadas nunca fueron más simples de obtener que en nuestra tienda Lan Tam,
-                        donde puedes comprar y reservar tus pasajes y paquetes turísticos, informarte de promociones,
-                        descuentos y beneficios ¡todo en el mismo lugar! </p>
-                        <a href="http://www.lan.com" target="_blank" class="url_agencia">www.lan.com</a>
-                      </div>
-                    </div>
-                </div> -->
-           <!--      <div class="col-md-4">
-                    <div class="box_agencia">
-                          <div class="head_agencia">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
-                          </div>
-                          <div class="desc_servicio text-center">
-                          <p> Cuando de viajes se trata, Cocha es el experto. Con más de 60 años de experiencia,
-                          esta agencia está dedicada a la venta de viajes que consideran pasajes,
-                          estadías y tours por todo el mundo, con asesoría profesional para que
-                          nada falle en un viaje inolvidable.</p>
-                          <p>¿Vacaciones? ¡Ahora!</p>
-                          <a href="http://www.cocha.com" target="_blank" class="url_agencia">www.cocha.com</a>
-                          </div>
-                    </div>
-                </div> -->
-				<?php } ?>
 
 
               </div>
