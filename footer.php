@@ -133,7 +133,7 @@ if(ICL_LANGUAGE_CODE=='en'){
               <div id="TA_socialButtonBubbles464" class="TA_socialButtonBubbles">
                   <ul id="RuQEoXeD" class="TA_links x91SAq">
                       <li id="ErqX32" class="PZPJHn">
-                      <a target="_blank" href="https://www.tripadvisor.cl/Attraction_Review-g294305-d2491922-Reviews-Parque_Arauco-Santiago_Santiago_Metropolitan_Region.html"><img src="https://www.tripadvisor.cl/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+                      <a target="_blank" href="https://www.tripadvisor.cl/Attraction_Review-g294305-d7726307-Reviews-Mall_Arauco_Maipu-Santiago_Santiago_Metropolitan_Region.html"><img src="https://www.tripadvisor.cl/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
                       </li>
                   </ul>
               </div>
