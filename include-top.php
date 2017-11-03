@@ -78,7 +78,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                  <span class="icon-bar bottom_bar"></span>
                </button>
                   <div class="logo">
-                    <a href="<?php bloginfo('url'); ?>"> parque arauco</a>
+                    <a href="<?php bloginfo('url'); ?>">Arauco Maipú</a>
                   </div> <!-- brand -->
 
                     <div id="lang_switcher" class="visible-xs visible-sm">

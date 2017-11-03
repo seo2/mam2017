@@ -7,9 +7,9 @@
 
     <div class="rrss visible-xs visible-sm center-block text-center">
       <ul>
-        <li><a href="https://www.facebook.com/parauco" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.instagram.com/parquearauco/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href="https://twitter.com/parquearauco" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/AraucoMaipu" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/araucomaipu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/araucomaipu" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
        <!--  <li><a href="https://es.pinterest.com/parquearauco/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li> -->
        <li><a href="<?php bloginfo('url'); ?>/horarios"><i class="fa fa-clock-o" aria-hidden="true"></i></a></li>
       </ul>
@@ -27,19 +27,20 @@
                   <ul class="nav navbar-nav lista_menu">
                       <li class="active"><a href="<?php bloginfo('url'); ?>">Home</a></li>
                        <li><a id="btn_tiendas"    href="<?php bloginfo('url'); ?>/tiendas#tiendas"><?php echo $menu7; ?></a></li>
-                     <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-lujo"><?php echo $menu2; ?></a></li>
-                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/restaurantes#restaurantes"><?php echo $menu3; ?></a></li>
-                     <li><a id="btn_novedades"    href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu6; ?></a></li>
-                     
-                     <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novedades#entretencion"><?php echo $menu5; ?></a></li>
-                     <li><a id="btn_piso"       href="<?php bloginfo('url'); ?>/galeria"><?php echo $menu4; ?></a></li>
+                     <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/patio-de-comida#patio-de-comida"><?php echo $menu3; ?></a></li>
+                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/restaurantes#restaurantes"><?php echo $menu4; ?></a></li>
+                         <li><a id="btn_entretencion"   href="<?php bloginfo('url'); ?>/novedades#entretencion"><?php echo $menu6; ?></a></li>
+                   <!--   <li><a id="btn_novedades"    href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu5; ?></a></li>
+ -->                     
+                 
+                   
                      
                     
                    </ul>
                     <div class="divisor_h text-center"></div>
                      <ul class="nav navbar-nav lista_menu">
                        <li><a href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu8; ?></a></li>
-<!--                        <li><a href="http://www.revistadetalle.cl/" target="_blank"><?php echo $menu9; ?></a></li> -->
+        <li><a id="btn_piso"       href="<?php bloginfo('url'); ?>/novedades-galeria/#galerias"><?php echo $menu9; ?></a></li>
                        <li><a href="<?php bloginfo('url'); ?>/servicio-al-cliente"><?php echo $menu10; ?></a></li>
                      <!--   <li><a href="<?php bloginfo('url'); ?>/travellers"><?php echo $menu11; ?></a></li> -->
                    </ul>
@@ -109,7 +110,7 @@
 				<span class="icon-bar bottom_bar"></span>
 			</button>
 			<div class="logo">
-                <a href="<?php bloginfo('url'); ?>"> parque arauco</a>
+                <a href="<?php bloginfo('url'); ?>"> Arauco Maipú</a>
            	</div> <!-- brand -->
             <div id="lang_switcher" class="visible-xs visible-sm">
             	<select name="language" class="selectpicker show-menu-arrow" id="language"> 

@@ -221,7 +221,7 @@
           </div>
     </div>
 
-      <div class="col-xs-6">
+      <!-- <div class="col-xs-6">
         <div class="box_servicio" id="serv4xsbox">
           <a href="javascript:void(0);" class="borde_amarillo" data-toggle="collapse" data-target="#serv4xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/taxis.svg"  class="center-block">
@@ -231,7 +231,7 @@
         <div class="box_more_info">
           <a href="javascript:void(0);" ata-toggle="collapse" data-target="#serv4xs"><?php echo $btn1; ?></a>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- CONTENIDO SERVICIO 3 Y 4 -->
