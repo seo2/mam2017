@@ -78,7 +78,11 @@ if(ICL_LANGUAGE_CODE=='en'){
                  <span class="icon-bar bottom_bar"></span>
                </button>
                   <div class="logo">
+<<<<<<< HEAD
                     <a href="<?php bloginfo('url'); ?>"> Arauco Maipú</a>
+=======
+                    <a href="<?php bloginfo('url'); ?>">Arauco Maipú</a>
+>>>>>>> d2cf16319261ddfd8905aeac6a5a5be76169b32b
                   </div> <!-- brand -->
 
 <!--
