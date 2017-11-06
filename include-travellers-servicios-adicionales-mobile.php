@@ -110,7 +110,19 @@
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv3xs"><?php echo $btn1; ?></a>
           </div>
     </div>
+    <div class="col-xs-6">
+        <div class="box_servicio" id="serv7xsbox">
+          <a href="javascript:void(0);" class="borde_verde" data-toggle="collapse" data-target="#content_telefonia">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/ico-telefonia.png"  class="center-block">
+              <!-- <p><?php echo $serv4; ?></p> -->
+              <p>Telefonía</p>
 
+          </a>
+        </div>
+        <div class="box_more_info">
+          <a href="javascript:void(0);" ata-toggle="collapse" data-target="#serv4xs"><?php echo $btn1; ?></a>
+        </div>
+    </div>
       <!-- <div class="col-xs-6">
         <div class="box_servicio" id="serv4xsbox">
           <a href="javascript:void(0);" class="borde_amarillo" data-toggle="collapse" data-target="#serv4xs">
@@ -132,7 +144,7 @@
               <h4 class="divider naranja"><?php echo $serv3; ?></h4>
                 <div class="close_servicio" data-target="#serv3xs"> </div>
                 <div class="row">
-            
+
                     <div class="col-md-4">
 						<div class="box_agencia">
                             <div class="head_agencia">
@@ -154,83 +166,11 @@
             </div>
         </div> <!-- content agencia -->
 
-      <?php
-          $args = array(
-          'post_type'     => array('servicios_generales'),
-          'p'         => 1622
-          );
-        $the_query = new WP_Query ($args);
-          $i = 0;
-          if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-            $i++;
-      ?>
-        <div id="serv4xs" class="content_servicio collapse">
-            <div id="serv4xsancla" class="anclita_xs4"></div>
-            <div class="container">
-                <h4 class="divider amarillo"><?php the_title(); ?></h4>
-                <div class="close_servicio" data-target="#serv4xs"> </div>
-                <div class="row">
-                  <div class="col-md-6 col-md-push-6">
-                      <div class="img_servicio"  style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
-                    </div>
-                    <div class="col-md-6 col-md-pull-6 ">
-                      <div class="desc_servicio">
-                <?php the_content(); ?>
-              </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- content taxis -->
-
-      <?php endwhile; else: ?>
-      <?php endif; ?>
-
-
-
-    <div class="col-xs-6">
-        <div class="box_servicio" id="serv5xsbox">
-          <a href="javascript:void(0);" class="borde_verde" data-toggle="collapse" data-target="#content_telefonia">
-              <img src="<?php bloginfo('template_url'); ?>/assets/img/ico-telefonia.png"  class="center-block">
-              <!-- <p><?php echo $serv4; ?></p> -->
-              <p>Telefonía</p>
-
-          </a>
-        </div>
-        <div class="box_more_info">
-          <a href="javascript:void(0);" ata-toggle="collapse" data-target="#serv4xs"><?php echo $btn1; ?></a>
-        </div>
-    </div>
-
-
-      <div class="col-xs-6">
-         <div class="box_servicio" id="serv5xsbox">
-          <a href="javascript:void(0);" class="borde_rojo" data-toggle="collapse" data-target="#serv5xs">
-              <img src="<?php bloginfo('template_url'); ?>/assets/img/bancos.svg"   class="center-block">
-              <p><?php echo $serv5; ?></p>
-          </a>
-        </div>
-         <div class="box_more_info">
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv5xs"><?php echo $btn1; ?></a>
-          </div>
-      </div>
-
-    <!--   <div class="col-xs-6">
-        <div class="box_servicio">
-          <a href="javascript:void(0);" class="borde_verde_oscuro" data-toggle="collapse" data-target="#content_chip_xs">
-              <img src="<?php bloginfo('template_url'); ?>/assets/img/arauco_chip.svg"  class="center-block">
-              <p>Arauco Chip </p>
-          </a>
-        </div>
-          <div class="box_more_info">
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_chip_xs"><?php echo $btn1; ?></a>
-          </div>
-      </div> -->
-
-         <div id="content_telefonia" class="content_servicio collapse">
+           <div id="content_telefonia" class="content_servicio collapse">
         <div id="content_telefoniaancla" class="anclita"></div>
         <div class="container">
             <h4 class="divider verde">Telefonía</h4>
-            <div class="close_servicio" data-target="#serv6"> </div>
+            <div class="close_servicio" data-target="#serv7xs"> </div>
 
         </div>
               <div class="row">
@@ -381,6 +321,68 @@
                 <?php } ?>
               </div> <!-- row -->
     </div>
+
+      <?php
+          $args = array(
+          'post_type'     => array('servicios_generales'),
+          'p'         => 1622
+          );
+        $the_query = new WP_Query ($args);
+          $i = 0;
+          if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+            $i++;
+      ?>
+        <div id="serv4xs" class="content_servicio collapse">
+            <div id="serv4xsancla" class="anclita_xs4"></div>
+            <div class="container">
+                <h4 class="divider amarillo"><?php the_title(); ?></h4>
+                <div class="close_servicio" data-target="#serv4xs"> </div>
+                <div class="row">
+                  <div class="col-md-6 col-md-push-6">
+                      <div class="img_servicio"  style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
+                    </div>
+                    <div class="col-md-6 col-md-pull-6 ">
+                      <div class="desc_servicio">
+                <?php the_content(); ?>
+              </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- content taxis -->
+
+      <?php endwhile; else: ?>
+      <?php endif; ?>
+
+
+
+
+
+
+      <div class="col-xs-6">
+         <div class="box_servicio" id="serv5xsbox">
+          <a href="javascript:void(0);" class="borde_rojo" data-toggle="collapse" data-target="#serv5xs">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/bancos.svg"   class="center-block">
+              <p><?php echo $serv5; ?></p>
+          </a>
+        </div>
+         <div class="box_more_info">
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv5xs"><?php echo $btn1; ?></a>
+          </div>
+      </div>
+
+    <!--   <div class="col-xs-6">
+        <div class="box_servicio">
+          <a href="javascript:void(0);" class="borde_verde_oscuro" data-toggle="collapse" data-target="#content_chip_xs">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/arauco_chip.svg"  class="center-block">
+              <p>Arauco Chip </p>
+          </a>
+        </div>
+          <div class="box_more_info">
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_chip_xs"><?php echo $btn1; ?></a>
+          </div>
+      </div> -->
+
+
 
     <div id="serv5xs" class="content_servicio collapse">
     	<div id="serv5xsancla" class="anclita_xs4"></div>
