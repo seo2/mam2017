@@ -33,6 +33,9 @@
           <div class="close_servicio" data-target="#serv1xs"></div>
           <div class="row">
                   <div class="col-md-6 col-md-push-6">
+                    <div class="head_agencia">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/cruzverde.jpg" alt="" width="70" height="45">
+                        </div>
                      <div class="desc_servicio">
 
                  Cruz Verde<br>
@@ -48,6 +51,9 @@
 
             <div class="col-md-6 col-md-pull-6 ">
                         <div class="desc_servicio">
+                          <div class="head_agencia">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/salcobrand.jpg" alt="" width="70" height="45">
+                        </div>
                          <p>
                           Salco Brand <br>
                           La más completa farmacia que tiene además a su disposición de sus clientes la zona de servicios
