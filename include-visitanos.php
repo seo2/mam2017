@@ -21,8 +21,8 @@ if(ICL_LANGUAGE_CODE=='en'){
                   </a>
             </div> -->
                 <div class="item">
-                    <a href="http://www.araucomaipu.cl/" target="_blank">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/logos_mall/arauco_maipu.svg" alt="" class="center-block">
+                    <a href="http://www.parquearauco.cl/" target="_blank">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/logos_mall/parque_arauco_xs.svg" alt="" class="center-block">
                     </a>
                 </div>
                 <div class="item">
@@ -68,8 +68,8 @@ if(ICL_LANGUAGE_CODE=='en'){
                   </a>
                 </li> -->
             <li>
-                <a class="hvr-float" href="http://www.araucomaipu.cl/" target="_blank">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/logos_mall/arauco_maipu.svg" class="logo_size">
+                <a class="hvr-float" href="http://www.parquearauco.cl/" target="_blank">
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/logos_mall/parque_arauco_xs.svg" class="logo_size">
                 </a>
             </li>
             <li>

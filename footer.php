@@ -126,7 +126,7 @@ if(ICL_LANGUAGE_CODE=='en'){
               <?php echo date("Y"); ?> © Todos los derechos reservados.
           </div>
           <div class="trip_advisor">
-          <!-- <a href="https://www.tripadvisor.cl/Attraction_Review-g294305-d2491922-Reviews-Parque_Arauco-Santiago_Santiago_Metropolitan_Region.html">
+          <!-- <a href="https://www.tripadvisor.cl/Attraction_Review-g294305-d7726307-Reviews-Mall_Arauco_Maipu-Santiago_Santiago_Metropolitan_Region.html">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/tripadvisor.png"> 
           </a> -->
             
