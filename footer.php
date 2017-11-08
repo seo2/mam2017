@@ -1,18 +1,18 @@
-<?php 
+<?php
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "CUSTOMER SERVICE";
 	$tit2 = "EVERYTHING YOU NEED TO KNOW";
 	$tit3 = "Where we are, parking fees, contact and FAQ.";
-}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){
 	$tit1 = "SERVIÇO AO CLIENTE:";
 	$tit2 = "TUDO QUE VOCÊ PRECISA SABER";
 	$tit3 = "Onde estamos, taxas de estacionamento, contato e perguntas mais frequentes.";
-}else{ 
+}else{
 	$tit1 = "servicio al cliente";
 	$tit2 = "TODO LO QUE NECESITAS SABER";
 	$tit3 = "Dónde estamos, tarifas de estacionamiento, contacto y preguntas frecuentes.";
-} ?> 
+} ?>
     		<div class="row">
                 <div class="col-sm-12">
                     <div class="image_dynamic hover">
@@ -32,10 +32,10 @@ if(ICL_LANGUAGE_CODE=='en'){
             </div><!-- END MAIN ROW -->
 		</div> <!-- END MAIN CONTAINER -->
     </section> <!-- END MAIN_CONTENT -->
-            
+
     <?php include('include-visitanos.php') ?>
 
-<?php 
+<?php
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
 	$menu1 = "Investor Relations";
@@ -46,7 +46,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$menu6 = "SUPPLIERS AND TENANTS";
 	$menu7 = "LEGAL BASIS FOR TENDERS";
 	$tit1  = "see on maps";
-}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){
 	$menu1 = "RELAÇÕES COM INVESTIDORES";
 	$menu2 = "CONTATO COMERCIAL";
 	$menu3 = "CÓDIGO DE CONDUTA EMPRESARIAL";
@@ -55,7 +55,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$menu6 = "PROVEDORES E LOCATARIOS";
 	$menu7 = "CONCURSOS LEGAIS";
 	$tit1  = "VER NO MAPA";
-}else{ 
+}else{
 	$menu1 = "Investor Relations";
 	$menu2 = "Contacto Comercial";
 	$menu3 = "Código Conducta Empresarial";
@@ -64,7 +64,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$menu6 = "Proveedores y Locatarios";
 	$menu7 = "Legales concursos";
 	$tit1  = "ver en maps";
-} ?> 
+} ?>
     <div class="container">
      <footer>
       <div class="row">
@@ -91,7 +91,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                     Maip&uacute;. Santiago Chile. <br>
                     <a href="https://www.google.cl/maps/place/Mall+Arauco+Maip%C3%BA/@-33.4820447,-70.7510304,15z/data=!4m5!3m4!1s0x0:0xdb6d81fc6e90e4e5!8m2!3d-33.4820447!4d-70.7510304" class="link_rojo" target="_blank"><?php echo $tit1; ?></a></p>
                   </div>
-                </li>  
+                </li>
                 <li class="bullet clearfix">
                   <div class="bullet-icon bullet-icon-2">
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -109,7 +109,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                     <h2>horarios</h2>
                     <p>Lunes a domingos y</p>
                     <p> festivos, de 10:30 a 21:30 hrs.</p>
-					<?php } ?> 	                  
+					<?php } ?>
                   </div>
                 </li>
               </ul>
@@ -127,55 +127,57 @@ if(ICL_LANGUAGE_CODE=='en'){
           </div>
           <div class="trip_advisor">
           <!-- <a href="https://www.tripadvisor.cl/Attraction_Review-g294305-d7726307-Reviews-Mall_Arauco_Maipu-Santiago_Santiago_Metropolitan_Region.html">
-              <img src="<?php bloginfo('template_url'); ?>/assets/img/tripadvisor.png"> 
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/tripadvisor.png">
           </a> -->
-            
+<!--
               <div id="TA_socialButtonBubbles464" class="TA_socialButtonBubbles">
                   <ul id="RuQEoXeD" class="TA_links x91SAq">
                       <li id="ErqX32" class="PZPJHn">
-                      <a target="_blank" href="https://www.tripadvisor.cl/Attraction_Review-g294305-d7726307-Reviews-Mall_Arauco_Maipu-Santiago_Santiago_Metropolitan_Region.html"><img src="https://www.tripadvisor.cl/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+                      <a target="_blank" href="https://www.tripadvisor.cl/Attraction_Review-g294305-d7726307-Reviews-Mall_Arauco_Maipu-Santiago_Santiago_Metropolitan_Region.html">
+                        <img src="https://www.tripadvisor.cl/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
                       </li>
                   </ul>
-              </div>
-              <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=464&amp;locationId=2491922&amp;color=green&amp;size=rect&amp;lang=es_CL&amp;display_version=2"></script>
-               
+              </div> -->
+
+             <!--  <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=464&amp;locationId=2491922&amp;color=green&amp;size=rect&amp;lang=es_CL&amp;display_version=2"></script> -->
+
           </div> <!-- trip advisor -->
-      </div><!-- footer_bottom -->  
+      </div><!-- footer_bottom -->
     </div>
-    <!-- js --> 
+    <!-- js -->
 
 <?php wp_footer(); ?>
 
-<script> 
+<script>
 	$(function(){
   var currencies = [
-	  
+
 	  <?php
 	$categorias = $db->rawQuery("select * from pak_categorias where idioma = $idioma");
 	if($categorias){
 		foreach ($categorias as $p) {
-			
+
 			echo "{ value: '".addslashes($p['nombre_subcategoria'])."', id: '".$p['id_subcategoria']."', tipo: '-', busqueda: 'Cat' },";
 		}
-	}  	
+	}
 	$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma");
 	if($tiendas){
 		foreach ($tiendas as $t) {
-			
+
 			echo "{ value: '". str_replace("'", "",  addslashes($t['nombre']))."', id: '".$t['punto_interes']."', tipo: '".$t['tipo']."', busqueda: 'Tienda' },";
 		}
-	}    
+	}
 	  ?>
-    
+
   ];
-  
+
   // setup autocomplete function pulling from currencies[] array
   $('#input_search_home').autocomplete({
     lookup: currencies,
     onSelect: function (suggestion) {
      // alert(suggestion.busqueda+': '+suggestion.value+ ' - id: '+ suggestion.id);
-     
-      
+
+
       if(suggestion.busqueda=='Cat'){
 	      pagina = '<?php bloginfo('url'); ?>/tiendas?catID=';
       }else if(suggestion.busqueda=='Tienda'){
@@ -189,18 +191,18 @@ if(ICL_LANGUAGE_CODE=='en'){
 		      pagina = '<?php bloginfo('url'); ?>/piso-diseno?tiendaID=';
 		  }
       }else{
-	      
+
       }
-      
+
 	  window.location.href = pagina+suggestion.id;
-      
+
     }
   });
-  
 
-}); 
 
-<?php 	
+});
+
+<?php
 	$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 	if (strpos($url,'distrito-de-lujo-tienda') !== false) {
 	    $dl = true;
@@ -216,7 +218,7 @@ if(ICL_LANGUAGE_CODE=='en'){
     $('body').toggleClass('menu_open');
 <?php } ?>
 
-</script>  
-  
+</script>
+
   </body>
 </html>
