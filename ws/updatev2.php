@@ -26,13 +26,14 @@
 				$db 	= new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
 				$url  = 'http://107.20.253.116:10000/totem/rest/front/getPuntosInteres';
 				$url  = 'http://52.45.110.155:8080/totem/rest/front/getPuntosInteres';
+				$url  = 'http://api.dsignage.mzzo.com/totem/rest/front/getPuntosInteres';
 				$lang = $_GET['lang'];
 				
 				$ch = curl_init();
 				
 				curl_setopt($ch, CURLOPT_URL, $url);
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-				curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n \"edificio\":86,\n \"canal\":2,\n \"idioma\":\"$lang\"\n}");
+				curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n \"edificio\":105,\n \"canal\":2,\n \"idioma\":\"$lang\"\n}");
 				curl_setopt($ch, CURLOPT_POST, 1);
 				
 				$headers = array();
