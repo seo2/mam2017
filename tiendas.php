@@ -82,9 +82,9 @@ if(ICL_LANGUAGE_CODE=='en'){
 								}else{
 									if($_GET['pagina']){
 										$desde 	 = 12 * ($_GET['pagina'] - 1);
-										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(119,131,110) order by nombre limit $desde, 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(196,199,110) order by nombre limit $desde, 12");
 									}else{
-										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(119,131,110) order by nombre limit 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(196,199,110) order by nombre limit 12");
 									}
 								}
 		                            
@@ -169,7 +169,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 		}
 		$cola = "&catID=$buscar";	
 	}else{
-		$db->where('tipo', Array(119, 131,110), 'NOT IN');
+		$db->where('tipo', Array(196, 199,110), 'NOT IN');
 		$rowcount = $db->getValue ("pak_tiendas", "count(*)");
 		$cola = "";
 	}

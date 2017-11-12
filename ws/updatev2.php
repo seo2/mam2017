@@ -109,12 +109,14 @@
 					}else{
 						$telefono_punto_interes 	= ""; 
 					}  
+/*
 					$imagen_plano_punto_interes		= $value['imagen_plano_punto_interes'];  
 					if($value['imagen_plano_punto_interes']){
 						$imagen_plano_punto_interes		= $value['imagen_plano_punto_interes']; 
 					}else{
 						$imagen_plano_punto_interes 			= ""; 
 					}  
+*/
 					$pinDescuento		 			= $value['pinDescuento']; 
 					if($value['piiDescripcionDescuento']){
 						$piiDescripcionDescuento 	= $value['piiDescripcionDescuento']; 
@@ -165,7 +167,7 @@
 							"categoria"						=> $categoria,
 							"url_punto_interes" 			=> $url_punto_interes,
 							"telefono_punto_interes" 		=> $telefono_punto_interes,
-							"imagen_plano_punto_interes" 	=> $imagen_plano_punto_interes,
+							"imagen_plano_punto_interes" 	=> '',
 							"estado_punto_interes"			=> $estado_punto_interes,
 							"pinDescuento" 					=> $pinDescuento,
 							"piiDescripcionDescuento" 		=> $piiDescripcionDescuento
@@ -186,6 +188,7 @@
 							curl_close($ch);
 							fclose($fp);
 							
+/*
 							$ch = curl_init($imagen_plano_punto_interes);
 							$fp = fopen('uploads/plano_'.$punto_interes.'.jpg', 'wb');
 							curl_setopt($ch, CURLOPT_FILE, $fp);
@@ -193,6 +196,7 @@
 							curl_exec($ch);
 							curl_close($ch);
 							fclose($fp);
+*/
 						}
 					}else{
 						$ok = false;
@@ -209,7 +213,7 @@
 							"categoria"						=> $categoria,
 							"url_punto_interes" 			=> $url_punto_interes,
 							"telefono_punto_interes" 		=> $telefono_punto_interes,
-							"imagen_plano_punto_interes" 	=> $imagen_plano_punto_interes,
+							"imagen_plano_punto_interes" 	=> '',
 							"estado_punto_interes"			=> $estado_punto_interes,
 							"pinDescuento" 					=> $pinDescuento,
 							"piiDescripcionDescuento" 		=> $piiDescripcionDescuento
@@ -234,6 +238,7 @@
 							}
 							
 							
+/*
 							$plano = 'uploads/plano_'.$punto_interes.'.jpg';
 							if (unlink($plano)) {
 								$ch = curl_init($imagen_plano_punto_interes);
@@ -244,8 +249,9 @@
 								curl_close($ch);
 								fclose($fp);
 							} else {
-							   // echo 'No se reemplazó el plano '.$punto_interes;
+							  
 							}
+*/
 						}
 					}					
 					
@@ -319,16 +325,16 @@
 										);
 										
 										$db->insert ('pak_tiendas_scat', $data);
+									}
 										
-										if($sc == 131 || $sc == 119 || $sc == 110){
-											$data = Array (
-												"tipo" => $sc
-											);
-										
-											$db->where ('idioma', $idioma);
-											$db->where ('punto_interes', $punto_interes);
-											$db->update ('pak_tiendas', $data);
-										}
+									if($sc == 196 || $sc == 119 || $sc == 199){
+										$data = Array (
+											"tipo" => $sc
+										);
+									
+										$db->where ('idioma', $idioma);
+										$db->where ('punto_interes', $punto_interes);
+										$db->update ('pak_tiendas', $data);
 									}
 								}
 							}

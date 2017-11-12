@@ -141,7 +141,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                     <?php }else{ 	?>
                                      <!-- <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-lujo"><?php echo $menu2; ?></a></li> -->
                                       <li><a id="btn_tiendas"     href="<?php bloginfo('url'); ?>/tiendas#tiendas"><?php echo $menu7; ?></a></li>
-                                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/patiocomida#patiocomida"><?php echo $menu3; ?></a></li>
+                                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/patiocomidas#patiocomidas"><?php echo $menu3; ?></a></li>
                                      <li><a id="btn_piso" 			href="<?php bloginfo('url'); ?>/restaurantes#restaurantes"><?php echo $menu4; ?></a></li>
                                      <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novedades#entretencion"><?php echo $menu6; ?></a></li>
                                      <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu5; ?></a></li>
