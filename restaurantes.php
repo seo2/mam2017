@@ -1,8 +1,7 @@
 <?
 /*
 
-Template name: Boulevard Tiendas
-
+Template name: Restaurantes
 */
 ?>
 <?php include('header.php') ?>
@@ -21,9 +20,9 @@ Template name: Boulevard Tiendas
 	                            <?php
 								if($_GET['page']){
 									$desde 	 = 12 * ($_GET['page'] - 1);
-									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 199 order by nombre limit $desde, 12");
+									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo IN(196,193) order by nombre limit $desde, 12");
 								}else{
-									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 199 order by nombre limit 12");
+									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo IN(196,193) order by nombre limit 12");
 								}
 								if($tiendas){
 									foreach ($tiendas as $t) {   
@@ -85,12 +84,12 @@ Template name: Boulevard Tiendas
       </div>
 
 <?php // include('include-boulevard-otras-tiendas.php'); ?>
-<div id="pages" style="display:none;" data-pagina="boulevard-tiendas">
+<div id="pages" style="display:none;" data-pagina="restaurantes">
 <?php 
 	$postperpage = 12;
 	$rowcount = 0;
 
-	$db->where('tipo', Array(199), 'IN');
+	$db->where('tipo', Array(196,193), 'IN');
 	$rowcount = $db->getValue ("pak_tiendas", "count(*)");
 	$cola = "";
 
@@ -103,7 +102,7 @@ Template name: Boulevard Tiendas
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php bloginfo('url'); ?>/boulevard-tiendas?page=<?php echo  $x.$cola; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/restaurantes?page=<?php echo  $x.$cola; ?>"></a>
 	<?php 
 		$x++; 
 	}

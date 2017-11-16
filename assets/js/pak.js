@@ -394,12 +394,10 @@ $('.box_slider').owlCarousel({
 	   		if(tipo>0){
 	   		  if(tipo=='0'){
 			      pagina = '/tiendas?tiendaID=';
-		      }else if(tipo=='110'){
-			      pagina = '/boulevard-tiendas?tiendaID=';
-			  }else if(tipo=='119'){
-			      pagina = '/distrito-de-lujo-tienda?tiendaID=';
-			  }else if(tipo=='131'){
-			      pagina = '/piso-diseno?tiendaID=';
+		      }else if(tipo=='199'){
+			      pagina = '/patio-de-comidas?tiendaID=';
+			  }else if(tipo=='193'){
+			      pagina = '/restaurantes?tiendaID=';
 			  }
 		      window.location.href = urlpak+pagina+id_tienda;
 	   		}else{

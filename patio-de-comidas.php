@@ -12,18 +12,18 @@ Template name: Patio de Comidas
     <section class="main_content">
       <div class="container">
           <div class="row">
-              <section class="tiendas">
+              <section class="tiendas" id="patio-de-comidas">
                   <h4 class="divider">Patio de Comidas</h4>
-                   <a href="boulevard.php" class="back">< <?php echo $back; ?></a>
+                   <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
                       <div class="grid_tiendas center-block">
                           <div class="container">
                               <div class="row" id="caja_tienda">
 	                            <?php
 								if($_GET['page']){
 									$desde 	 = 12 * ($_GET['page'] - 1);
-									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 199 order by nombre limit $desde, 12");
+									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo IN (199,196) order by nombre limit $desde, 12");
 								}else{
-									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 199 order by nombre limit 12");
+									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo IN (199,196) order by nombre limit 12");
 								}
 								if($tiendas){
 									foreach ($tiendas as $t) {   
@@ -85,12 +85,12 @@ Template name: Patio de Comidas
       </div>
 
 <?php // include('include-boulevard-otras-tiendas.php'); ?>
-<div id="pages" style="display:none;" data-pagina="boulevard-tiendas">
+<div id="pages" style="display:none;" data-pagina="patio-de-comidas">
 <?php 
 	$postperpage = 12;
 	$rowcount = 0;
 
-	$db->where('tipo', Array(199), 'IN');
+	$db->where('tipo', Array(199,196), 'IN');
 	$rowcount = $db->getValue ("pak_tiendas", "count(*)");
 	$cola = "";
 
@@ -103,7 +103,7 @@ Template name: Patio de Comidas
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php bloginfo('url'); ?>/boulevard-tiendas?page=<?php echo  $x.$cola; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/patio-de-comidas?page=<?php echo  $x.$cola; ?>"></a>
 	<?php 
 		$x++; 
 	}

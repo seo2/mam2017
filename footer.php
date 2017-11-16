@@ -183,12 +183,10 @@ if(ICL_LANGUAGE_CODE=='en'){
       }else if(suggestion.busqueda=='Tienda'){
 	      if(suggestion.tipo=='0'){
 		      pagina = '<?php bloginfo('url'); ?>/tiendas?tiendaID=';
-	      }else if(suggestion.tipo=='110'){
-		      pagina = '<?php bloginfo('url'); ?>/boulevard-tiendas?tiendaID=';
-		  }else if(suggestion.tipo=='119'){
-		      pagina = '<?php bloginfo('url'); ?>/distrito-de-lujo/distrito-de-lujo-tienda/?tiendaID=';
-		  }else if(suggestion.tipo=='131'){
-		      pagina = '<?php bloginfo('url'); ?>/piso-diseno?tiendaID=';
+	      }else if(suggestion.tipo=='199'){
+		      pagina = '<?php bloginfo('url'); ?>/patio-de-comidas?tiendaID=';
+		  }else if(suggestion.tipo=='193'){
+		      pagina = '<?php bloginfo('url'); ?>/restaurantes?tiendaID=';
 		  }
       }else{
 

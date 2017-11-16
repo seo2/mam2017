@@ -10,12 +10,6 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
   		<div class="container">
@@ -24,8 +18,7 @@
 				require_once("_lib/config.php");
 				require_once("_lib/MysqliDb.php");
 				$db 	= new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
-				$url  = 'http://107.20.253.116:10000/totem/rest/front/getPuntosInteres';
-				$url  = 'http://52.45.110.155:8080/totem/rest/front/getPuntosInteres';
+				
 				$url  = 'http://api.dsignage.mzzo.com/totem/rest/front/getPuntosInteres';
 				$lang = $_GET['lang'];
 				
@@ -53,8 +46,6 @@
 				$data 	= $obj->objetoRetorno;
 			
 				$id_list = array_map(function ($val) { return (int) $val->punto_interes; }, $data);
-				
-				//print_r($id_list);
 
 				$db->where('punto_interes', $id_list, 'NOT IN');
 				$db->delete('pak_tiendas');
@@ -71,7 +62,8 @@
 				$db->where('punto_interes', $id_list, 'NOT IN');
 				$db->delete('pak_tiendas_tags');
 
-				//print_r($json);
+				print_r($json);
+				exit;
 				$e = 0;
 				foreach(  $json['objetoRetorno'] as $value ){
 
@@ -82,7 +74,7 @@
 					if($value['descripcion']){
 						$descripcion	 			= $value['descripcion'];  
 					}else{
-						$descripcion 			= ""; 
+						$descripcion 				= ""; 
 					} 
 					$logo			 				= $value['logo'];   
 					$orden			 				= $value['orden'];  
@@ -109,14 +101,7 @@
 					}else{
 						$telefono_punto_interes 	= ""; 
 					}  
-/*
-					$imagen_plano_punto_interes		= $value['imagen_plano_punto_interes'];  
-					if($value['imagen_plano_punto_interes']){
-						$imagen_plano_punto_interes		= $value['imagen_plano_punto_interes']; 
-					}else{
-						$imagen_plano_punto_interes 			= ""; 
-					}  
-*/
+					
 					$pinDescuento		 			= $value['pinDescuento']; 
 					if($value['piiDescripcionDescuento']){
 						$piiDescripcionDescuento 	= $value['piiDescripcionDescuento']; 
@@ -188,15 +173,6 @@
 							curl_close($ch);
 							fclose($fp);
 							
-/*
-							$ch = curl_init($imagen_plano_punto_interes);
-							$fp = fopen('uploads/plano_'.$punto_interes.'.jpg', 'wb');
-							curl_setopt($ch, CURLOPT_FILE, $fp);
-							curl_setopt($ch, CURLOPT_HEADER, 0);
-							curl_exec($ch);
-							curl_close($ch);
-							fclose($fp);
-*/
 						}
 					}else{
 						$ok = false;
@@ -234,24 +210,9 @@
 								curl_close($ch);
 								fclose($fp);
 							} else {
-							  //  echo 'No se reemplazó el logo '.$punto_interes;
+							   echo 'No se reemplazó el logo '.$punto_interes;
 							}
-							
-							
-/*
-							$plano = 'uploads/plano_'.$punto_interes.'.jpg';
-							if (unlink($plano)) {
-								$ch = curl_init($imagen_plano_punto_interes);
-								$fp = fopen($plano, 'wb');
-								curl_setopt($ch, CURLOPT_FILE, $fp);
-								curl_setopt($ch, CURLOPT_HEADER, 0);
-								curl_exec($ch);
-								curl_close($ch);
-								fclose($fp);
-							} else {
-							  
-							}
-*/
+						
 						}
 					}					
 					
@@ -327,7 +288,7 @@
 										$db->insert ('pak_tiendas_scat', $data);
 									}
 										
-									if($sc == 196 || $sc == 119 || $sc == 199){
+									if($sc == 196 || $sc == 193 || $sc == 199){
 										$data = Array (
 											"tipo" => $sc
 										);
@@ -401,7 +362,7 @@
 												curl_close($ch);
 												fclose($fp);
 											} else {
-											    //echo 'No se reemplazó la foto '.$punto_interes.' - '.$i;
+											    echo 'No se reemplazó la foto '.$punto_interes.' - '.$i;
 											}
 										}										
 									}
@@ -413,11 +374,5 @@
 				?>   			
   			</div>	
   		</div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
