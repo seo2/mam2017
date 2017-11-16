@@ -60,7 +60,7 @@ if($tipo==1){
 	$message .= "</body></html>";
 	
 	$subject = 'Mensaje desde ParqueArauco.cl';
-	$headers = "From: " . "<no-reply@parquearauco.cl> Contacto Parque Arauco" . "\r\n";
+	$headers = "From: " . "<no-reply@parquearauco.cl> Contacto Arauco Maipú" . "\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 	

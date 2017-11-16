@@ -61,9 +61,11 @@
 				
 				$db->where('punto_interes', $id_list, 'NOT IN');
 				$db->delete('pak_tiendas_tags');
+/*
 
 				print_r($json);
 				exit;
+*/
 				$e = 0;
 				foreach(  $json['objetoRetorno'] as $value ){
 
@@ -85,7 +87,7 @@
 					$piso 							= $value['piso'];  
 					if($value['numero_piso']==1){
 						$numero_piso	= $value['numero_piso'];  
-					}elseif($value['numero_piso']==3){
+					}elseif($value['numero_piso']==2){
 						$numero_piso	= 2;  
 					}else{
 						$numero_piso	= 3;  

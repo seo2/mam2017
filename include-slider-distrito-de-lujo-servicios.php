@@ -2,17 +2,17 @@
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "Valet parking";
-	$txt1 = "We invite you to enjoy the comfort of this exclusive benefit in the Premium parking spaces in Parque Arauco.";
+	$txt1 = "We invite you to enjoy the comfort of this exclusive benefit in the Premium parking spaces in Arauco Maipú.";
 	$tit2 = "SCHEDULE";
 	$txt2 = "<p>Monday to Saturday<br>10:30 am to 9:00 pm.<br></p><p>Sunday and hollydays <br>11:00 am to 9:00 pm <br></p>";
 }elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
 	$tit1 = "Valet parking";
-	$txt1 = "Te convidamos para aproveitar da comodidade deste exclusivo benefício nos estacionamentos Premium de Parque Arauco.";
+	$txt1 = "Te convidamos para aproveitar da comodidade deste exclusivo benefício nos estacionamentos Premium de Arauco Maipú.";
 	$tit2 = "Horarios";
 	$txt2 = "<p>Segunda a sábado <br>10:30 h às 21:00 h.<br></p><p>Domingo e feriados <br>11:00 h às 21:00 h <br></p>";
 }else{ 
 	$tit1 = "Valet Parking";
-	$txt1 = "Te invitamos a disfrutar de la comodidad de este exclusivo beneficio en los estacionamientos Premium de Parque Arauco.";
+	$txt1 = "Te invitamos a disfrutar de la comodidad de este exclusivo beneficio en los estacionamientos Premium de Arauco Maipú.";
 	$tit2 = "Horarios";
 	$txt2 = "<p>Lunes a Sábado<br>10:30 hrs a 21:00 hrs.<br></p><p>Domingo y festivos <br>11:00 hrs a 21:00 hrs <br></p>";
 } ?> 

@@ -59,10 +59,10 @@
                             <div class="ribbon_end"></div>
                     	</div><!-- title tag -->
                       
-						<p>  Arauco TAG es un servicio exclusivo de Parque Arauco, con el cuál podrás acceder a los
+						<p>  Arauco TAG es un servicio exclusivo de Arauco Maipú, con el cuál podrás acceder a los
                             estacionamientos del mall con el mismo TAG que usas en las autopistas urbanas, es decir, ya no
                              tendrás que sacar el ticket de estacionamiento ni tampoco pagar por el
-                            estacionamiento durante tu visita a Parque Arauco, sino que el cobro de cada visita te llegará
+                            estacionamiento durante tu visita a Arauco Maipú, sino que el cobro de cada visita te llegará
                              directamente en el estado de cuenta de Costanera Norte, cada mes.</p>
                           
                         <div class="title_tag">
@@ -74,7 +74,7 @@
 
                         <p>
                              Te invitamos a firmar el convenio Arauco TAG, autorizando que el cobro por 
-                             el uso de los estacionamientos de Parque Arauco sea facturado y cargado 
+                             el uso de los estacionamientos de Arauco Maipú sea facturado y cargado 
                              mensualmente en tu cuenta de Costanera Norte. Este proceso es rápido y 
                              fácil y puedes realizarlo en los siguientes puntos:
                         </p>
@@ -83,7 +83,7 @@
 							<li><span>Módulo Costanera Norte, ubicado en pasillo de servicio.</span></li>
 							<li><span>Oficinas de Costanera Norte.</span></li>
 							<li><span>Enviar el formulario de inscripción al correo electrónico <a href="mailto:araucotag@cnorte.cl">araucotag@cnorte.cl</a>. El formulario de
-							inscripción puedes obtenerlo directamente en Parque Arauco o en las oficinas de Costanera Norte.</span></li>
+							inscripción puedes obtenerlo directamente en Arauco Maipú o en las oficinas de Costanera Norte.</span></li>
                         </ul>
 
                         <div class="title_tag">

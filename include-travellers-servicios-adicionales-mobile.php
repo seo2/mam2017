@@ -618,7 +618,7 @@
                                                             <p>La carga de la tarjeta tiene duración indefinida y es de responsabilidad del usuario conservarla en
                                                             un lugar seguro para evitar la pérdida y en consecuencia el saldo asociado a esta.
                                                             Por tu seguridad la tarjeta no debe quedar al interior de tu automóvil cuando utilices
-                                                            los estacionamientos de Parque Arauco.</p>
+                                                            los estacionamientos de Arauco Maipú.</p>
                                                          </div>
                                                        </div>
                                                      </div>

@@ -82,9 +82,9 @@ if(ICL_LANGUAGE_CODE=='en'){
 		    	
 		    }
 		}
-		$title = 'Parque Arauco | '.$nombre;
+		$title = 'Arauco Maipú | '.$nombre;
 	}else{
-		$title = 'Parque Arauco | Mucho más que comprar';
+		$title = 'Arauco Maipú | Mucho más que comprar';
 		$imagen = "assets/img/demobgtienda.jpg";
 	} 
 	

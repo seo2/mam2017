@@ -419,8 +419,8 @@ $('.box_slider').owlCarousel({
 
 		   		pagina = $('#pages').data('pagina');
 
-		   		window.history.pushState("object or string", "Parque Arauco | " + nombre, "?tiendaID="+id_tienda);
-		   		document.title = "Parque Arauco | " + nombre;
+		   		window.history.pushState("object or string", "Arauco Maipú | " + nombre, "?tiendaID="+id_tienda);
+		   		document.title = "Arauco Maipú | " + nombre;
 		   		$("#caja_datos_tienda p").html('');
 		   		$("#caja_datos_tienda p.descripciontienda").html(desc);
 		   		$("#caja_datos_tienda .img_tienda").css({"background":"url("+img+")"});
@@ -471,8 +471,8 @@ $('.box_slider').owlCarousel({
 
 	   		pagina = $('#pages').data('pagina');
 
-	   		window.history.pushState("object or string", "Parque Arauco | Tiendas", urlpak+'/'+pagina);
-	   		document.title = "Parque Arauco | Tiendas";
+	   		window.history.pushState("object or string", "Arauco Maipú | Tiendas", urlpak+'/'+pagina);
+	   		document.title = "Arauco Maipú | Tiendas";
 
 			$(window).scrollTo($("#tienda_"+id_tienda).offset().top-150, 1500,'elasout');
         });

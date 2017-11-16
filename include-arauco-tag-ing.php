@@ -57,7 +57,7 @@
                             <div class="ribbon_end"></div>
                     	</div><!-- title tag -->
                       
-						<p>Arauco TAG is an exclusive service of Parque Arauco with which you can access to all parking lots in the mall with the same TAG you use in the urban highways.  In other words, during your visit to Parque Arauco, you do not have to get a parking ticket or pay for parking either; the charge will go directly to your Costanera Norte account monthly.</p>
+						<p>Arauco TAG is an exclusive service of Arauco Maipú with which you can access to all parking lots in the mall with the same TAG you use in the urban highways.  In other words, during your visit to Arauco Maipú, you do not have to get a parking ticket or pay for parking either; the charge will go directly to your Costanera Norte account monthly.</p>
                           
                         <div class="title_tag">
                         	<div class="ribbon">
@@ -66,13 +66,13 @@
 							<div class="ribbon_end"></div>
                         </div>
 
-                        <p>We invite you to sign the Arauco TAG agreement giving authorization to charge and bill the use of Parque Arauco parking lots against your Costanera Norte account on a monthly basis.  This process is fast and easy and you can do this in the following spots:</p>
+                        <p>We invite you to sign the Arauco TAG agreement giving authorization to charge and bill the use of Arauco Maipú parking lots against your Costanera Norte account on a monthly basis.  This process is fast and easy and you can do this in the following spots:</p>
                         
                         <ul>
 							<li><span>Directly into <a href="http://www.costaneranorte.cl" target="_blank">www.costaneranorte.cl</a></span></li>
 							<li><span>Costanera Norte counter located at the service corridor.</span></li>
 							<li><span>Costanera Norte offices.</span></li>
-							<li><span>Send the registration form at the email  <a href="mailto:araucotag@cnorte.cl">araucotag@cnorte.cl</a>. The registration form can be obtained directly in Parque Arauco or in Costanera Norte offices.</span></li>
+							<li><span>Send the registration form at the email  <a href="mailto:araucotag@cnorte.cl">araucotag@cnorte.cl</a>. The registration form can be obtained directly in Arauco Maipú or in Costanera Norte offices.</span></li>
                         </ul>
 
                         <div class="title_tag">

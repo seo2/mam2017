@@ -8,7 +8,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$form5 = "Reason for contact";
 	$form6 = "Type of service";
 	$form7 = "Message";
-	$form8 = "I am interested in receiving further information about activities, contests and promotions organized and administered by the website Parque Arauco.";
+	$form8 = "I am interested in receiving further information about activities, contests and promotions organized and administered by the website Arauco Maipú.";
 	$form9 = "Submit";
 }elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
 	$form1 = "Nome";
@@ -18,7 +18,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$form5 = "Motivo do contato";
 	$form6 = "Tipo de serviço";
 	$form7 = "Mensagem";
-	$form8 = "Gostaria de receber informações das atividades, dos curso e das programações organizadas e administradas pelo site Parque Arauco.";
+	$form8 = "Gostaria de receber informações das atividades, dos curso e das programações organizadas e administradas pelo site Arauco Maipú.";
 	$form9 = "Enviar";
 }else{ 
 	$form1 = "Nombre completo";
@@ -28,7 +28,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$form5 = "motivo del contacto";
 	$form6 = "tipo de servicio";
 	$form7 = "MENSAJE";
-	$form8 = "Me interesa recibir información de actividades, concursos y promociones organizadas y administradas por el sitio web Parque Arauco";
+	$form8 = "Me interesa recibir información de actividades, concursos y promociones organizadas y administradas por el sitio web Arauco Maipú";
 	$form9 = "enviar";
 } ?>  
     <div class="container">

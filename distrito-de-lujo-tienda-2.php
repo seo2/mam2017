@@ -52,7 +52,7 @@
                             
                               <h3>Gangs of Paris, el nuevo fashion film de Tory Burch</h3>
 
-                      <p>  Te invitamos a conocer la nueva boutique en Parque Arauco y descubrir 
+                      <p>  Te invitamos a conocer la nueva boutique en Arauco Maipú y descubrir 
                                               nuestra última colección. Tory Burch es una marca americana que 
                                               encarna el estilo personal y la sensibilidad de su Presidenta, 
                                               Gerenta General y diseñadora: ToryBurch.</p>

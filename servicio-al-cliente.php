@@ -118,7 +118,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                               </div>
                               <div class="col-xs-10">
                                     <div class="centerer">
-                                      <p>Parque Arauco Shopping Center pone a su disposición y sin costo el servicio regular de Transfer Gratis, desde y hacia los hoteles. Este servicio recorre los principales hoteles de la cuidad los 365 días del año.</p>
+                                      <p>Arauco Maipú Shopping Center pone a su disposición y sin costo el servicio regular de Transfer Gratis, desde y hacia los hoteles. Este servicio recorre los principales hoteles de la cuidad los 365 días del año.</p>
                                        <p> Para mayor información y detalles nuestros servicios al cliente, ingresa <a href=""><strong>aquí</strong></a></p>
                                     </div>
                                

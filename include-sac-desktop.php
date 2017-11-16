@@ -135,7 +135,7 @@
                                                   <!-- <div class="ribbon"></div> -->
                                                 <h4 class="panel-title">
                                                   <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q<?php echo $i; ?>" aria-expanded="false" aria-controls="q<?php echo $i; ?>">
-                                                   ESTACIONAMIENTOS PARQUE ARAUCO
+                                                   ESTACIONAMIENTOS Arauco Maipú
                                                   </a>
                                                 </h4>
                                               </div>

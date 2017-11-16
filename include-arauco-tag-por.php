@@ -57,7 +57,7 @@
                             <div class="ribbon_end"></div>
                     	</div><!-- title tag -->
                       
-						<p>Arauco TAG é um serviço exclusivo do Parque Arauco, com o qual vai poder usar os estacionamentos do shopping com o mesmo TAG que vai usar nas autopistas urbanas. Não vai ter que tirar o ticket de estacionamento nem pagar pelo estacionamento durante sua visita a Parque Arauco, pois o pagamento de cada visita chegará diretamente no estado de conta do Costanera Norte, cada mês.</p>
+						<p>Arauco TAG é um serviço exclusivo do Arauco Maipú, com o qual vai poder usar os estacionamentos do shopping com o mesmo TAG que vai usar nas autopistas urbanas. Não vai ter que tirar o ticket de estacionamento nem pagar pelo estacionamento durante sua visita a Arauco Maipú, pois o pagamento de cada visita chegará diretamente no estado de conta do Costanera Norte, cada mês.</p>
                           
                         <div class="title_tag">
                         	<div class="ribbon">
@@ -66,12 +66,12 @@
 							<div class="ribbon_end"></div>
                         </div>
 
-                        <p>Convidamos a nossos clientes para assinarem convênio Arauco TAG, autorizando que a cobrança pelo uso dos estacionamentos de Parque Arauco seja faturado e carregado mensalmente em sua conta de Costanera Norte. Este processo é rápido e fácil. Pode o realizar nos seguintes pontos:</p>
+                        <p>Convidamos a nossos clientes para assinarem convênio Arauco TAG, autorizando que a cobrança pelo uso dos estacionamentos de Arauco Maipú seja faturado e carregado mensalmente em sua conta de Costanera Norte. Este processo é rápido e fácil. Pode o realizar nos seguintes pontos:</p>
                         <ul>
 							<li><span>Diretamente em <a href="http://www.costaneranorte.cl" target="_blank"> www.costaneranorte.cl</a></span></li>
 							<li><span>Módulo Costanera Norte, localizado no corredor de serviço.</span></li>
 							<li><span>Escritórios de Costanera Norte.</span></li>
-							<li><span>Enviar o formulário de inscrição ao e-mail <a href="mailto:araucotag@cnorte.cl">araucotag@cnorte.cl</a>. O formulário de inscrição pode ser obtido diretamente no Parque Arauco ou nos escritórios de Costanera Norte.</span></li>
+							<li><span>Enviar o formulário de inscrição ao e-mail <a href="mailto:araucotag@cnorte.cl">araucotag@cnorte.cl</a>. O formulário de inscrição pode ser obtido diretamente no Arauco Maipú ou nos escritórios de Costanera Norte.</span></li>
                         </ul>
 
                         <div class="title_tag">

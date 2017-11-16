@@ -10,7 +10,7 @@
                             <div class="caption">
                                     <h3>Te atendemos</h3> 
                                     <h4 class="divider">para darte lo mejor</h4> 
-                                    <p>Queremos hacer de tu visita a Parque Arauco, el mejor momento.</p>
+                                    <p>Queremos hacer de tu visita a Arauco Maipú, el mejor momento.</p>
                                 <div class="">
                                   <a class="btn btn-default btn_blanco" href="#" role="button">más info</a>
                                 </div>

@@ -11,7 +11,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 }else{
 	$tit1 = "servicio al cliente";
 	$tit2 = "TODO LO QUE NECESITAS SABER";
-	$tit3 = "Dónde estamos, tarifas de estacionamiento, contacto y preguntas frecuentes.";
+	$tit3 = "Dónde estamos, contacto y preguntas frecuentes.";
 } ?>
     		<div class="row">
                 <div class="col-sm-12">
@@ -87,7 +87,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                   </div>
                   <div class="bullet-content">
                     <h2>Mall Arauco Maip&uacute;</h2>
-                    <p>Avenida Am&eacute;rico Vespucio 399, <br>
+                    <p>Av. Am&eacute;rico Vespucio 399, <br>
                     Maip&uacute;. Santiago Chile. <br>
                     <a href="https://www.google.cl/maps/place/Mall+Arauco+Maip%C3%BA/@-33.4820447,-70.7510304,15z/data=!4m5!3m4!1s0x0:0xdb6d81fc6e90e4e5!8m2!3d-33.4820447!4d-70.7510304" class="link_rojo" target="_blank"><?php echo $tit1; ?></a></p>
                   </div>
