@@ -64,7 +64,7 @@
                         </div>
                  <div class="desc_servicio">
 
-<p>Todos los productos y servicios orientados a cuidar la salud están en Farmacias Cruz Verde,
+<p>Todos los productos y servicios orientados a cuidar la salud están en  Cruz Verde,
   una de las más importantes cadenas de farmacias chilenas. Una variada línea de
   productos cosméticos completa la oferta. Lo mejor en servicio, con personal
   capacitado y orientado a atender todas tus necesidades.

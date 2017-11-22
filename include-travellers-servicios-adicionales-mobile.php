@@ -40,7 +40,7 @@
 
                  Cruz Verde<br>
 
-                  <p>Todos los productos y servicios orientados a cuidar la salud están en Farmacias Cruz Verde, una de las más
+                  <p>Todos los productos y servicios orientados a cuidar la salud están en  Cruz Verde, una de las más
                   importantes cadenas de farmacias chilenas. Una variada línea de productos cosméticos completa la oferta.
                   Lo mejor en servicio, con personal capacitado y orientado a atender todas tus necesidades.
                   Horario. Lunes a domingos y festivos, de 10:30 a 21:30 hrs.
